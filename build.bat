@@ -1,4 +1,4 @@
-packer build -only=virtualbox-iso  -var-file=common_var.conf template.json > build.log 2>&1
+packer build -only=virtualbox-iso -on-error=ask -var-file=common_var.conf template.json > build.log 2>&1
 
 @if not "%ERRORLEVEL%"  == "0" (
   echo "ƒGƒ‰[I"

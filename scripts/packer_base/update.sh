@@ -7,6 +7,11 @@ ubuntu_major_version="`echo $ubuntu_version | awk -F. '{print $1}'`";
 # Disable release-upgrades
 sed -i.bak 's/^Prompt=.*$/Prompt=never/' /etc/update-manager/release-upgrades;
 
+
+### Change apt repository of jp.
+sed -i '1s#^#deb http://ftp.jaist.ac.jp/pub/Linux/ubuntu/ xenial main restricted universe multiverse\ndeb http://ftp.jaist.ac.jp/pub/Linux/ubuntu/ xenial-updates main restricted universe multiverse\ndeb http://ftp.jaist.ac.jp/pub/Linux/ubuntu/ xenial-backports main restricted universe multiverse\ndeb http://ftp.jaist.ac.jp/pub/Linux/ubuntu/ xenial-security main restricted universe multiverse\n#' /etc/apt/sources.list
+
+
 # Update the package list
 apt-get -y update;
 
