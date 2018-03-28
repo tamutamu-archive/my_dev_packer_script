@@ -4,10 +4,10 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: Downloading or copying: file:///C:/Program%20Files/Oracle/VirtualBox/VBoxGuestAdditions.iso
 ==> virtualbox-iso: Downloading or copying ISO
     virtualbox-iso: Found already downloaded, initial checksum matched, no download needed: http://releases.ubuntu.com/16.04.3/ubuntu-16.04.3-server-amd64.iso
-==> virtualbox-iso: Starting HTTP server on port 8708
+==> virtualbox-iso: Starting HTTP server on port 8731
 ==> virtualbox-iso: Creating virtual machine...
 ==> virtualbox-iso: Creating hard drive...
-==> virtualbox-iso: Creating forwarded port mapping for communicator (SSH, WinRM, etc) (host port 3962)
+==> virtualbox-iso: Creating forwarded port mapping for communicator (SSH, WinRM, etc) (host port 3531)
 ==> virtualbox-iso: Executing custom VBoxManage commands...
     virtualbox-iso: Executing: modifyvm ubuntu-16.04-amd64 --memory 1024
     virtualbox-iso: Executing: modifyvm ubuntu-16.04-amd64 --cpus 1
@@ -36,52 +36,58 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: Get:3 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-backports InRelease [102 kB]
     virtualbox-iso: Get:4 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-security InRelease [102 kB]
     virtualbox-iso: Get:5 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/main amd64 Packages [1,201 kB]
-    virtualbox-iso: Get:6 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/main i386 Packages [1,196 kB]
-    virtualbox-iso: Get:7 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/main Translation-en [568 kB]
-    virtualbox-iso: Hit:8 http://archive.ubuntu.com/ubuntu xenial InRelease
-    virtualbox-iso: Hit:9 http://security.ubuntu.com/ubuntu xenial-security InRelease
-    virtualbox-iso: Get:10 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/restricted amd64 Packages [8,344 B]
-    virtualbox-iso: Get:11 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/restricted i386 Packages [8,684 B]
-    virtualbox-iso: Get:12 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/restricted Translation-en [2,908 B]
-    virtualbox-iso: Get:13 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/universe amd64 Packages [7,532 kB]
-    virtualbox-iso: Hit:14 http://archive.ubuntu.com/ubuntu xenial-updates InRelease
-    virtualbox-iso: Hit:15 http://archive.ubuntu.com/ubuntu xenial-backports InRelease
+    virtualbox-iso: Hit:6 http://archive.ubuntu.com/ubuntu xenial InRelease
+    virtualbox-iso: Get:7 http://security.ubuntu.com/ubuntu xenial-security InRelease [102 kB]
+    virtualbox-iso: Get:8 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/main i386 Packages [1,196 kB]
+    virtualbox-iso: Get:9 http://archive.ubuntu.com/ubuntu xenial-updates InRelease [102 kB]
+    virtualbox-iso: Get:10 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/main Translation-en [568 kB]
+    virtualbox-iso: Get:11 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/restricted amd64 Packages [8,344 B]
+    virtualbox-iso: Get:12 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/restricted i386 Packages [8,684 B]
+    virtualbox-iso: Get:13 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/restricted Translation-en [2,908 B]
+    virtualbox-iso: Get:14 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/universe amd64 Packages [7,532 kB]
+    virtualbox-iso: Get:15 http://archive.ubuntu.com/ubuntu xenial-backports InRelease [102 kB]
     virtualbox-iso: Get:16 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/universe i386 Packages [7,512 kB]
-    virtualbox-iso: Get:17 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/universe Translation-en [4,354 kB]
-    virtualbox-iso: Get:18 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/multiverse amd64 Packages [144 kB]
-    virtualbox-iso: Get:19 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/multiverse i386 Packages [140 kB]
-    virtualbox-iso: Get:20 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/multiverse Translation-en [106 kB]
-    virtualbox-iso: Get:21 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/main amd64 Packages [744 kB]
-    virtualbox-iso: Get:22 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/main i386 Packages [690 kB]
-    virtualbox-iso: Get:23 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/main Translation-en [308 kB]
-    virtualbox-iso: Get:24 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/restricted amd64 Packages [7,560 B]
-    virtualbox-iso: Get:25 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/restricted i386 Packages [7,524 B]
-    virtualbox-iso: Get:26 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/restricted Translation-en [2,272 B]
-    virtualbox-iso: Get:27 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/universe amd64 Packages [615 kB]
-    virtualbox-iso: Get:28 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/universe i386 Packages [570 kB]
-    virtualbox-iso: Get:29 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/universe Translation-en [248 kB]
-    virtualbox-iso: Get:30 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/multiverse amd64 Packages [16.2 kB]
-    virtualbox-iso: Get:31 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/multiverse i386 Packages [15.3 kB]
-    virtualbox-iso: Get:32 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/multiverse Translation-en [8,076 B]
-    virtualbox-iso: Get:33 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-backports/main amd64 Packages [4,836 B]
-    virtualbox-iso: Get:34 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-backports/main i386 Packages [4,840 B]
-    virtualbox-iso: Get:35 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-backports/main Translation-en [3,220 B]
-    virtualbox-iso: Get:36 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-backports/universe amd64 Packages [7,084 B]
-    virtualbox-iso: Get:37 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-backports/universe i386 Packages [7,060 B]
-    virtualbox-iso: Get:38 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-backports/universe Translation-en [3,812 B]
-    virtualbox-iso: Get:39 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-security/main amd64 Packages [465 kB]
-    virtualbox-iso: Get:40 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-security/main i386 Packages [419 kB]
-    virtualbox-iso: Get:41 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-security/main Translation-en [201 kB]
-    virtualbox-iso: Get:42 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-security/restricted amd64 Packages [7,224 B]
-    virtualbox-iso: Get:43 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-security/restricted i386 Packages [7,224 B]
-    virtualbox-iso: Get:44 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-security/restricted Translation-en [2,152 B]
-    virtualbox-iso: Get:45 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-security/universe amd64 Packages [337 kB]
-    virtualbox-iso: Get:46 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-security/universe i386 Packages [296 kB]
-    virtualbox-iso: Get:47 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-security/universe Translation-en [126 kB]
-    virtualbox-iso: Get:48 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-security/multiverse amd64 Packages [3,208 B]
-    virtualbox-iso: Get:49 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-security/multiverse i386 Packages [3,376 B]
-    virtualbox-iso: Get:50 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-security/multiverse Translation-en [1,408 B]
-    virtualbox-iso: Fetched 28.5 MB in 5s (4,750 kB/s)
+    virtualbox-iso: Get:17 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages [744 kB]
+    virtualbox-iso: Get:18 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/universe Translation-en [4,354 kB]
+    virtualbox-iso: Get:19 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/multiverse amd64 Packages [144 kB]
+    virtualbox-iso: Get:20 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/multiverse i386 Packages [140 kB]
+    virtualbox-iso: Get:21 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/multiverse Translation-en [106 kB]
+    virtualbox-iso: Get:22 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/main amd64 Packages [744 kB]
+    virtualbox-iso: Get:23 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/main i386 Packages [690 kB]
+    virtualbox-iso: Get:24 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/main Translation-en [308 kB]
+    virtualbox-iso: Get:25 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/restricted amd64 Packages [7,560 B]
+    virtualbox-iso: Get:26 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/restricted i386 Packages [7,524 B]
+    virtualbox-iso: Get:27 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/restricted Translation-en [2,272 B]
+    virtualbox-iso: Get:28 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/universe amd64 Packages [615 kB]
+    virtualbox-iso: Get:29 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/universe i386 Packages [570 kB]
+    virtualbox-iso: Get:30 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/universe Translation-en [248 kB]
+    virtualbox-iso: Get:31 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/multiverse amd64 Packages [16.2 kB]
+    virtualbox-iso: Get:32 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/multiverse i386 Packages [15.3 kB]
+    virtualbox-iso: Get:33 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/multiverse Translation-en [8,076 B]
+    virtualbox-iso: Get:34 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-backports/main amd64 Packages [4,836 B]
+    virtualbox-iso: Get:35 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-backports/main i386 Packages [4,840 B]
+    virtualbox-iso: Get:36 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-backports/main Translation-en [3,220 B]
+    virtualbox-iso: Get:37 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-backports/universe amd64 Packages [7,104 B]
+    virtualbox-iso: Get:38 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-backports/universe i386 Packages [7,080 B]
+    virtualbox-iso: Get:39 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-backports/universe Translation-en [3,844 B]
+    virtualbox-iso: Get:40 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-security/main amd64 Packages [465 kB]
+    virtualbox-iso: Get:41 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-security/main i386 Packages [420 kB]
+    virtualbox-iso: Get:42 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-security/main Translation-en [201 kB]
+    virtualbox-iso: Get:43 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-security/restricted amd64 Packages [7,224 B]
+    virtualbox-iso: Get:44 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-security/restricted i386 Packages [7,224 B]
+    virtualbox-iso: Get:45 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-security/restricted Translation-en [2,152 B]
+    virtualbox-iso: Get:46 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-security/universe amd64 Packages [337 kB]
+    virtualbox-iso: Get:47 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-security/universe i386 Packages [296 kB]
+    virtualbox-iso: Get:48 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-security/universe Translation-en [126 kB]
+    virtualbox-iso: Get:49 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-security/multiverse amd64 Packages [3,208 B]
+    virtualbox-iso: Get:50 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-security/multiverse i386 Packages [3,376 B]
+    virtualbox-iso: Get:51 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-security/multiverse Translation-en [1,408 B]
+    virtualbox-iso: Get:52 http://archive.ubuntu.com/ubuntu xenial-updates/main i386 Packages [690 kB]
+    virtualbox-iso: Get:53 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages [615 kB]
+    virtualbox-iso: Get:54 http://archive.ubuntu.com/ubuntu xenial-updates/universe i386 Packages [570 kB]
+    virtualbox-iso: Get:55 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 Packages [16.2 kB]
+    virtualbox-iso: Get:56 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse i386 Packages [15.3 kB]
+    virtualbox-iso: Fetched 31.4 MB in 13s (2,412 kB/s)
     virtualbox-iso: Reading package lists...
     virtualbox-iso: + cat
     virtualbox-iso: + cat
@@ -251,7 +257,7 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: Get:129 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/main amd64 unattended-upgrades all 0.90ubuntu0.9 [32.3 kB]
     virtualbox-iso: Extracting templates from packages: 100%
     virtualbox-iso: Preconfiguring packages ...
-    virtualbox-iso: Fetched 177 MB in 1min 43s (1,709 kB/s)
+    virtualbox-iso: Fetched 177 MB in 29s (5,967 kB/s)
     virtualbox-iso: (Reading database ... 70705 files and directories currently installed.)
     virtualbox-iso: Preparing to unpack .../base-files_9.4ubuntu4.6_amd64.deb ...
     virtualbox-iso: Unpacking base-files (9.4ubuntu4.6) over (9.4ubuntu4.5) ...
@@ -686,23 +692,23 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: Installing new version of config file /etc/init.d/mdadm ...
     virtualbox-iso: update-initramfs: deferring update (trigger activated)
     virtualbox-iso: Generating grub configuration file ...
-    virtualbox-iso: File descriptor 3 (pipe:[46339]) leaked on vgs invocation. Parent PID 30126: /usr/sbin/grub-probe
-    virtualbox-iso: File descriptor 3 (pipe:[46339]) leaked on vgs invocation. Parent PID 30126: /usr/sbin/grub-probe
-    virtualbox-iso: File descriptor 3 (pipe:[46339]) leaked on vgs invocation. Parent PID 30139: /usr/sbin/grub-probe
-    virtualbox-iso: File descriptor 3 (pipe:[46339]) leaked on vgs invocation. Parent PID 30139: /usr/sbin/grub-probe
-    virtualbox-iso: File descriptor 3 (pipe:[46339]) leaked on vgs invocation. Parent PID 30152: /usr/sbin/grub-probe
-    virtualbox-iso: File descriptor 3 (pipe:[46339]) leaked on vgs invocation. Parent PID 30152: /usr/sbin/grub-probe
-    virtualbox-iso: File descriptor 3 (pipe:[46339]) leaked on vgs invocation. Parent PID 30165: /usr/sbin/grub-probe
-    virtualbox-iso: File descriptor 3 (pipe:[46339]) leaked on vgs invocation. Parent PID 30165: /usr/sbin/grub-probe
+    virtualbox-iso: File descriptor 3 (pipe:[46497]) leaked on vgs invocation. Parent PID 30202: /usr/sbin/grub-probe
+    virtualbox-iso: File descriptor 3 (pipe:[46497]) leaked on vgs invocation. Parent PID 30202: /usr/sbin/grub-probe
+    virtualbox-iso: File descriptor 3 (pipe:[46497]) leaked on vgs invocation. Parent PID 30215: /usr/sbin/grub-probe
+    virtualbox-iso: File descriptor 3 (pipe:[46497]) leaked on vgs invocation. Parent PID 30215: /usr/sbin/grub-probe
+    virtualbox-iso: File descriptor 3 (pipe:[46497]) leaked on vgs invocation. Parent PID 30228: /usr/sbin/grub-probe
+    virtualbox-iso: File descriptor 3 (pipe:[46497]) leaked on vgs invocation. Parent PID 30228: /usr/sbin/grub-probe
+    virtualbox-iso: File descriptor 3 (pipe:[46497]) leaked on vgs invocation. Parent PID 30241: /usr/sbin/grub-probe
+    virtualbox-iso: File descriptor 3 (pipe:[46497]) leaked on vgs invocation. Parent PID 30241: /usr/sbin/grub-probe
     virtualbox-iso: Warning: Setting GRUB_TIMEOUT to a non-zero value when GRUB_HIDDEN_TIMEOUT is set is no longer supported.
-    virtualbox-iso: File descriptor 3 (pipe:[46339]) leaked on vgs invocation. Parent PID 30227: /usr/sbin/grub-probe
-    virtualbox-iso: File descriptor 3 (pipe:[46339]) leaked on vgs invocation. Parent PID 30227: /usr/sbin/grub-probe
+    virtualbox-iso: File descriptor 3 (pipe:[46497]) leaked on vgs invocation. Parent PID 30303: /usr/sbin/grub-probe
+    virtualbox-iso: File descriptor 3 (pipe:[46497]) leaked on vgs invocation. Parent PID 30303: /usr/sbin/grub-probe
     virtualbox-iso: Found linux image: /boot/vmlinuz-4.4.0-116-generic
     virtualbox-iso: Found linux image: /boot/vmlinuz-4.4.0-87-generic
     virtualbox-iso: Found initrd image: /boot/initrd.img-4.4.0-87-generic
-    virtualbox-iso: File descriptor 3 (pipe:[46339]) leaked on vgs invocation. Parent PID 30556: /usr/sbin/grub-probe
-    virtualbox-iso: File descriptor 3 (pipe:[46339]) leaked on vgs invocation. Parent PID 30556: /usr/sbin/grub-probe
-    virtualbox-iso: File descriptor 3 (pipe:[46339]) leaked on lvs invocation. Parent PID 30681: /bin/sh
+    virtualbox-iso: File descriptor 3 (pipe:[46497]) leaked on vgs invocation. Parent PID 30632: /usr/sbin/grub-probe
+    virtualbox-iso: File descriptor 3 (pipe:[46497]) leaked on vgs invocation. Parent PID 30632: /usr/sbin/grub-probe
+    virtualbox-iso: File descriptor 3 (pipe:[46497]) leaked on lvs invocation. Parent PID 30757: /bin/sh
     virtualbox-iso: done
     virtualbox-iso: update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
     virtualbox-iso: Setting up libklibc (2.0.4-8ubuntu1.16.04.4) ...
@@ -737,8 +743,8 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: Setting up tzdata (2017c-0ubuntu0.16.04) ...
     virtualbox-iso:
     virtualbox-iso: Current default time zone: 'Etc/UTC'
-    virtualbox-iso: Local time is now:      Tue Mar 27 10:58:45 UTC 2018.
-    virtualbox-iso: Universal Time is now:  Tue Mar 27 10:58:45 UTC 2018.
+    virtualbox-iso: Local time is now:      Wed Mar 28 07:27:18 UTC 2018.
+    virtualbox-iso: Universal Time is now:  Wed Mar 28 07:27:18 UTC 2018.
     virtualbox-iso: Run 'dpkg-reconfigure tzdata' if you wish to change it.
     virtualbox-iso:
     virtualbox-iso: Setting up distro-info-data (0.28ubuntu0.7) ...
@@ -928,16 +934,16 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: + mkdir -p /home/vagrant/.ssh
     virtualbox-iso: + command -v wget
     virtualbox-iso: + wget --no-check-certificate https://raw.githubusercontent.com/mitchellh/vagrant/master/keys/vagrant.pub -O /home/vagrant/.ssh/authorized_keys
-    virtualbox-iso: --2018-03-27 10:59:34--  https://raw.githubusercontent.com/mitchellh/vagrant/master/keys/vagrant.pub
+    virtualbox-iso: --2018-03-28 07:28:07--  https://raw.githubusercontent.com/mitchellh/vagrant/master/keys/vagrant.pub
     virtualbox-iso: Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.88.133
     virtualbox-iso: Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.88.133|:443... connected.
     virtualbox-iso: HTTP request sent, awaiting response... 200 OK
     virtualbox-iso: Length: 409 [text/plain]
     virtualbox-iso: Saving to: ‘/home/vagrant/.ssh/authorized_keys’
     virtualbox-iso:
-    virtualbox-iso:      0K                                                       100%  145M=0s
+    virtualbox-iso:      0K                                                       100% 8.69M=0s
     virtualbox-iso:
-    virtualbox-iso: 2018-03-27 10:59:34 (145 MB/s) - ‘/home/vagrant/.ssh/authorized_keys’ saved [409/409]
+    virtualbox-iso: 2018-03-28 07:28:07 (8.69 MB/s) - ‘/home/vagrant/.ssh/authorized_keys’ saved [409/409]
     virtualbox-iso:
     virtualbox-iso: + chown -R vagrant /home/vagrant/.ssh
     virtualbox-iso: + chmod -R go-rwsx /home/vagrant/.ssh
@@ -961,8 +967,8 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: VirtualBox Guest Additions: Starting.
     virtualbox-iso: VirtualBox Guest Additions: modprobe vboxsf failed
     virtualbox-iso: + echo 'VBoxLinuxAdditions.run exited 2 and is suppressed.' 'For more read https://www.virtualbox.org/ticket/12479'
-    virtualbox-iso: + umount /tmp/vbox
     virtualbox-iso: VBoxLinuxAdditions.run exited 2 and is suppressed. For more read https://www.virtualbox.org/ticket/12479
+    virtualbox-iso: + umount /tmp/vbox
     virtualbox-iso: + rm -rf /tmp/vbox
     virtualbox-iso: + rm -f /home/vagrant/VBoxGuestAdditions_5.2.8.iso
 ==> virtualbox-iso: Provisioning with shell script: scripts/packer_base/cleanup.sh
@@ -1205,8 +1211,8 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
     virtualbox-iso: debconf: falling back to frontend: Readline
     virtualbox-iso: Processing triggers for man-db (2.7.5-1) ...
-    virtualbox-iso: ==> Setup dpkg excludes for linux-firmware
     virtualbox-iso: + echo '==> Setup dpkg excludes for linux-firmware'
+    virtualbox-iso: ==> Setup dpkg excludes for linux-firmware
     virtualbox-iso: + cat
     virtualbox-iso: + cat
     virtualbox-iso: + rm -rf /lib/firmware/3com /lib/firmware/4.4.0-87-generic /lib/firmware/a300_pfp.fw /lib/firmware/a300_pm4.fw /lib/firmware/acenic /lib/firmware/adaptec /lib/firmware/advansys /lib/firmware/agere_ap_fw.bin /lib/firmware/agere_sta_fw.bin /lib/firmware/amdgpu /lib/firmware/ar3k /lib/firmware/ar5523.bin /lib/firmware/as102_data1_st.hex /lib/firmware/as102_data2_st.hex /lib/firmware/asihpi /lib/firmware/ath10k /lib/firmware/ath3k-1.fw /lib/firmware/ath6k /lib/firmware/ath9k_htc /lib/firmware/atmel /lib/firmware/atmel_at76c504_2958.bin /lib/firmware/atmel_at76c504a_2958.bin /lib/firmware/atmsar11.fw /lib/firmware/atusb /lib/firmware/av7110 /lib/firmware/bnx2x /lib/firmware/brcm /lib/firmware/carl9170-1.fw /lib/firmware/carl9170fw /lib/firmware/cavium /lib/firmware/cbfw-3.2.1.1.bin /lib/firmware/cbfw-3.2.3.0.bin /lib/firmware/cbfw-3.2.5.1.bin /lib/firmware/cis /lib/firmware/configure /lib/firmware/cpia2 /lib/firmware/ct2fw-3.2.1.1.bin /lib/firmware/ct2fw-3.2.3.0.bin /lib/firmware/ct2fw-3.2.5.1.bin /lib/firmware/ctefx.bin /lib/firmware/ctfw-3.2.1.1.bin /lib/firmware/ctfw-3.2.3.0.bin /lib/firmware/ctfw-3.2.5.1.bin /lib/firmware/ctspeq.bin /lib/firmware/cxgb3 /lib/firmware/cxgb4 /lib/firmware/dsp56k /lib/firmware/dvb-fe-xc4000-1.4.1.fw /lib/firmware/dvb-fe-xc5000-1.6.114.fw /lib/firmware/dvb-fe-xc5000c-4.1.30.7.fw /lib/firmware/dvb-usb-dib0700-1.20.fw /lib/firmware/dvb-usb-it9135-01.fw /lib/firmware/dvb-usb-it9135-02.fw /lib/firmware/dvb-usb-terratec-h5-drxk.fw /lib/firmware/ea /lib/firmware/edgeport /lib/firmware/emi26 /lib/firmware/emi62 /lib/firmware/ene-ub6250 /lib/firmware/ess /lib/firmware/f2255usb.bin /lib/firmware/go7007 /lib/firmware/GPL-3 /lib/firmware/hfi1_dc8051.fw /lib/firmware/hfi1_fabric.fw /lib/firmware/hfi1_pcie.fw /lib/firmware/hfi1_sbus.fw /lib/firmware/htc_7010.fw /lib/firmware/htc_9271.fw /lib/firmware/i2400m-fw-usb-1.4.sbcf /lib/firmware/i2400m-fw-usb-1.5.sbcf /lib/firmware/i6050-fw-usb-1.5.sbcf /lib/firmware/i915 /lib/firmware/intel /lib/firmware/ipw2100-1.3.fw /lib/firmware/ipw2100-1.3-i.fw /lib/firmware/ipw2100-1.3-p.fw /lib/firmware/ipw2200-bss.fw /lib/firmware/ipw2200-ibss.fw /lib/firmware/ipw2200-sniffer.fw /lib/firmware/isci /lib/firmware/iwlwifi-1000-5.ucode /lib/firmware/iwlwifi-100-5.ucode /lib/firmware/iwlwifi-105-6.ucode /lib/firmware/iwlwifi-135-6.ucode /lib/firmware/iwlwifi-2000-6.ucode /lib/firmware/iwlwifi-2030-6.ucode /lib/firmware/iwlwifi-3160-10.ucode /lib/firmware/iwlwifi-3160-12.ucode /lib/firmware/iwlwifi-3160-13.ucode /lib/firmware/iwlwifi-3160-16.ucode /lib/firmware/iwlwifi-3160-17.ucode /lib/firmware/iwlwifi-3160-7.ucode /lib/firmware/iwlwifi-3160-8.ucode /lib/firmware/iwlwifi-3160-9.ucode /lib/firmware/iwlwifi-3168-21.ucode /lib/firmware/iwlwifi-3168-22.ucode /lib/firmware/iwlwifi-3168-27.ucode /lib/firmware/iwlwifi-3168-29.ucode /lib/firmware/iwlwifi-3945-2.ucode /lib/firmware/iwlwifi-4965-2.ucode /lib/firmware/iwlwifi-5000-5.ucode /lib/firmware/iwlwifi-5150-2.ucode /lib/firmware/iwlwifi-6000-4.ucode /lib/firmware/iwlwifi-6000g2a-5.ucode /lib/firmware/iwlwifi-6000g2a-6.ucode /lib/firmware/iwlwifi-6000g2b-6.ucode /lib/firmware/iwlwifi-6050-5.ucode /lib/firmware/iwlwifi-7260-10.ucode /lib/firmware/iwlwifi-7260-12.ucode /lib/firmware/iwlwifi-7260-13.ucode /lib/firmware/iwlwifi-7260-16.ucode /lib/firmware/iwlwifi-7260-17.ucode /lib/firmware/iwlwifi-7260-7.ucode /lib/firmware/iwlwifi-7260-8.ucode /lib/firmware/iwlwifi-7260-9.ucode /lib/firmware/iwlwifi-7265-10.ucode /lib/firmware/iwlwifi-7265-12.ucode /lib/firmware/iwlwifi-7265-13.ucode /lib/firmware/iwlwifi-7265-16.ucode /lib/firmware/iwlwifi-7265-17.ucode /lib/firmware/iwlwifi-7265-8.ucode /lib/firmware/iwlwifi-7265-9.ucode /lib/firmware/iwlwifi-7265D-10.ucode /lib/firmware/iwlwifi-7265D-12.ucode /lib/firmware/iwlwifi-7265D-13.ucode /lib/firmware/iwlwifi-7265D-16.ucode /lib/firmware/iwlwifi-7265D-17.ucode /lib/firmware/iwlwifi-7265D-21.ucode /lib/firmware/iwlwifi-7265D-22.ucode /lib/firmware/iwlwifi-7265D-27.ucode /lib/firmware/iwlwifi-7265D-29.ucode /lib/firmware/iwlwifi-8000C-13.ucode /lib/firmware/iwlwifi-8000C-16.ucode /lib/firmware/iwlwifi-8000C-21.ucode /lib/firmware/iwlwifi-8000C-27.ucode /lib/firmware/iwlwifi-8000C-31.ucode /lib/firmware/iwlwifi-8265-21.ucode /lib/firmware/iwlwifi-8265-22.ucode /lib/firmware/iwlwifi-8265-27.ucode /lib/firmware/iwlwifi-8265-31.ucode /lib/firmware/iwlwifi-9000-pu-b0-jf-b0-33.ucode /lib/firmware/iwlwifi-9260-th-b0-jf-b0-33.ucode /lib/firmware/kaweth /lib/firmware/keyspan /lib/firmware/keyspan_pda /lib/firmware/korg /lib/firmware/lbtf_usb.bin /lib/firmware/lgs8g75.fw /lib/firmware/libertas /lib/firmware/liquidio /lib/firmware/Makefile /lib/firmware/matrox /lib/firmware/mellanox /lib/firmware/moxa /lib/firmware/mrvl /lib/firmware/mt7601u.bin /lib/firmware/mt7650.bin /lib/firmware/mts_cdma.fw /lib/firmware/mts_edge.fw /lib/firmware/mts_gsm.fw /lib/firmware/mts_mt9234mu.fw /lib/firmware/mts_mt9234zba.fw /lib/firmware/mwl8k /lib/firmware/mwlwifi /lib/firmware/myri10ge_eth_big_z8e.dat /lib/firmware/myri10ge_ethp_big_z8e.dat /lib/firmware/myri10ge_ethp_z8e.dat /lib/firmware/myri10ge_eth_z8e.dat /lib/firmware/myri10ge_rss_eth_big_z8e.dat /lib/firmware/myri10ge_rss_ethp_big_z8e.dat /lib/firmware/myri10ge_rss_ethp_z8e.dat /lib/firmware/myri10ge_rss_eth_z8e.dat /lib/firmware/netronome /lib/firmware/NPE-B /lib/firmware/NPE-C /lib/firmware/nvidia /lib/firmware/ositech /lib/firmware/phanfw.bin /lib/firmware/qat_895xcc.bin /lib/firmware/qat_895xcc_mmp.bin /lib/firmware/qat_c3xxx.bin /lib/firmware/qat_c3xxx_mmp.bin /lib/firmware/qat_c62x.bin /lib/firmware/qat_c62x_mmp.bin /lib/firmware/qat_mmp.bin /lib/firmware/qca /lib/firmware/qcom /lib/firmware/qed /lib/firmware/ql2100_fw.bin /lib/firmware/ql2200_fw.bin /lib/firmware/ql2300_fw.bin /lib/firmware/ql2322_fw.bin /lib/firmware/ql2400_fw.bin /lib/firmware/ql2500_fw.bin /lib/firmware/r128 /lib/firmware/r8a779x_usb3_v1.dlmem /lib/firmware/r8a779x_usb3_v2.dlmem /lib/firmware/r8a779x_usb3_v3.dlmem /lib/firmware/radeon /lib/firmware/README /lib/firmware/rp2.fw /lib/firmware/RS9113_AP_BT_DUAL_MODE.rps /lib/firmware/RS9113_WLAN_BT_DUAL_MODE.rps /lib/firmware/RS9113_WLAN_QSPI.rps /lib/firmware/rsi_91x.fw /lib/firmware/rt2561.bin /lib/firmware/rt2561s.bin /lib/firmware/rt2661.bin /lib/firmware/rt2860.bin /lib/firmware/rt2870.bin /lib/firmware/rt3070.bin /lib/firmware/rt3090.bin /lib/firmware/rt3290.bin /lib/firmware/rt73.bin /lib/firmware/RTL8192E /lib/firmware/rtl_bt /lib/firmware/rtl_nic /lib/firmware/rtlwifi /lib/firmware/s2250.fw /lib/firmware/s2250_loader.fw /lib/firmware/s5p-mfc.fw /lib/firmware/s5p-mfc-v6.fw /lib/firmware/s5p-mfc-v6-v2.fw /lib/firmware/s5p-mfc-v7.fw /lib/firmware/s5p-mfc-v8.fw /lib/firmware/sb16 /lib/firmware/scripts /lib/firmware/sdd_sagrad_1091_1098.bin /lib/firmware/slicoss /lib/firmware/sun /lib/firmware/tehuti /lib/firmware/ti_3410.fw /lib/firmware/ti_5052.fw /lib/firmware/ti-connectivity /lib/firmware/tigon /lib/firmware/ti-keystone /lib/firmware/tlg2300_firmware.bin /lib/firmware/ttusb-budget /lib/firmware/ueagle-atm /lib/firmware/usbdux /lib/firmware/usbduxfast_firmware.bin /lib/firmware/usbdux_firmware.bin /lib/firmware/usbduxsigma_firmware.bin /lib/firmware/v4l-cx231xx-avcore-01.fw /lib/firmware/v4l-cx23418-apu.fw /lib/firmware/v4l-cx23418-cpu.fw /lib/firmware/v4l-cx23418-dig.fw /lib/firmware/v4l-cx2341x-dec.fw /lib/firmware/v4l-cx2341x-enc.fw /lib/firmware/v4l-cx2341x-init.mpg /lib/firmware/v4l-cx23885-avcore-01.fw /lib/firmware/v4l-cx25840.fw /lib/firmware/v4l-pvrusb2-24xxx-01.fw /lib/firmware/v4l-pvrusb2-29xxx-01.fw /lib/firmware/vicam /lib/firmware/vntwusb.fw /lib/firmware/vpu_d.bin /lib/firmware/vpu_p.bin /lib/firmware/vxge /lib/firmware/WHENCE.ubuntu /lib/firmware/whiteheat.fw /lib/firmware/whiteheat_loader.fw /lib/firmware/wil6210.brd /lib/firmware/wil6210.fw /lib/firmware/wsm_22.bin /lib/firmware/yam /lib/firmware/yamaha /lib/firmware/zd1201-ap.fw /lib/firmware/zd1201.fw /lib/firmware/zd1211
@@ -1240,48 +1246,48 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: ++ awk -F ' ' '{print $4}'
     virtualbox-iso: ++ tail -n1
     virtualbox-iso: ++ df --sync -kP /
-    virtualbox-iso: + count=59306036
-    virtualbox-iso: + count=59306035
-    virtualbox-iso: + dd if=/dev/zero of=/tmp/whitespace bs=1M count=59306035
+    virtualbox-iso: + count=59306544
+    virtualbox-iso: + count=59306543
+    virtualbox-iso: + dd if=/dev/zero of=/tmp/whitespace bs=1M count=59306543
     virtualbox-iso: dd: error writing '/tmp/whitespace': No space left on device
     virtualbox-iso: 61118+0 records in
     virtualbox-iso: dd exit code 1 is suppressed
     virtualbox-iso: 61117+0 records out
-    virtualbox-iso: 64085843968 bytes (64 GB, 60 GiB) copied, 79.9835 s, 801 MB/s
+    virtualbox-iso: 64086364160 bytes (64 GB, 60 GiB) copied, 79.0772 s, 810 MB/s
     virtualbox-iso: + echo 'dd exit code 1 is suppressed'
     virtualbox-iso: + rm /tmp/whitespace
     virtualbox-iso: ++ awk -F ' ' '{print $4}'
     virtualbox-iso: ++ tail -n1
     virtualbox-iso: ++ df --sync -kP /boot
-    virtualbox-iso: + count=399383
-    virtualbox-iso: + count=399382
-    virtualbox-iso: + dd if=/dev/zero of=/boot/whitespace bs=1M count=399382
+    virtualbox-iso: + count=399343
+    virtualbox-iso: + count=399342
+    virtualbox-iso: + dd if=/dev/zero of=/boot/whitespace bs=1M count=399342
     virtualbox-iso: dd: error writing '/boot/whitespace': No space left on device
     virtualbox-iso: 413+0 records in
     virtualbox-iso: 412+0 records out
-    virtualbox-iso: 432799744 bytes (433 MB, 413 MiB) copied, 1.02393 s, 423 MB/s
     virtualbox-iso: dd exit code 1 is suppressed
+    virtualbox-iso: 432758784 bytes (433 MB, 413 MiB) copied, 1.00222 s, 432 MB/s
     virtualbox-iso: + echo 'dd exit code 1 is suppressed'
     virtualbox-iso: + rm /boot/whitespace
     virtualbox-iso: + set +e
     virtualbox-iso: ++ /sbin/blkid -o value -l -s UUID -t TYPE=swap
-    virtualbox-iso: + swapuuid=4b3c7727-5e06-4052-b822-6c4992f3748c
+    virtualbox-iso: + swapuuid=3045058e-32d3-40ee-83ab-3a542bebb11c
     virtualbox-iso: + case "$?" in
     virtualbox-iso: + set -e
-    virtualbox-iso: + '[' x4b3c7727-5e06-4052-b822-6c4992f3748c '!=' x ']'
-    virtualbox-iso: ++ readlink -f /dev/disk/by-uuid/4b3c7727-5e06-4052-b822-6c4992f3748c
+    virtualbox-iso: + '[' x3045058e-32d3-40ee-83ab-3a542bebb11c '!=' x ']'
+    virtualbox-iso: ++ readlink -f /dev/disk/by-uuid/3045058e-32d3-40ee-83ab-3a542bebb11c
     virtualbox-iso: + swappart=/dev/dm-1
     virtualbox-iso: + /sbin/swapoff /dev/dm-1
     virtualbox-iso: + dd if=/dev/zero of=/dev/dm-1 bs=1M
     virtualbox-iso: dd: error writing '/dev/dm-1': No space left on device
     virtualbox-iso: 1025+0 records in
     virtualbox-iso: 1024+0 records out
-    virtualbox-iso: 1073741824 bytes (1.1 GB, 1.0 GiB) copied, 1.25489 s, 856 MB/s
     virtualbox-iso: dd exit code 1 is suppressed
+    virtualbox-iso: 1073741824 bytes (1.1 GB, 1.0 GiB) copied, 1.08098 s, 993 MB/s
     virtualbox-iso: + echo 'dd exit code 1 is suppressed'
-    virtualbox-iso: + /sbin/mkswap -U 4b3c7727-5e06-4052-b822-6c4992f3748c /dev/dm-1
+    virtualbox-iso: + /sbin/mkswap -U 3045058e-32d3-40ee-83ab-3a542bebb11c /dev/dm-1
     virtualbox-iso: Setting up swapspace version 1, size = 1024 MiB (1073737728 bytes)
-    virtualbox-iso: no label, UUID=4b3c7727-5e06-4052-b822-6c4992f3748c
+    virtualbox-iso: no label, UUID=3045058e-32d3-40ee-83ab-3a542bebb11c
     virtualbox-iso: + sync
 ==> virtualbox-iso: Provisioning with shell script: scripts/packer_base/dev_env_install.sh
     virtualbox-iso: + mkdir -p /opt/scripts/packer_build
@@ -1291,9 +1297,7 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: + ./install.sh
     virtualbox-iso: /opt/scripts/packer_build/scripts/dev_env ~
     virtualbox-iso: /opt/scripts/packer_build/scripts/dev_env /opt/scripts/packer_build/scripts/dev_env
-    virtualbox-iso: /opt/scripts /opt/scripts/packer_build/scripts/dev_env
     virtualbox-iso: Cloning into 'my_dev_packer_script'...
-    virtualbox-iso: /opt/scripts/packer_build/scripts/dev_env
     virtualbox-iso:
     virtualbox-iso: WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
     virtualbox-iso:
@@ -1316,7 +1320,7 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: debconf: (This frontend requires a controlling tty.)
     virtualbox-iso: debconf: falling back to frontend: Teletype
     virtualbox-iso: dpkg-preconfigure: unable to re-open stdin:
-    virtualbox-iso: Fetched 3,163 kB in 3s (902 kB/s)
+    virtualbox-iso: Fetched 3,163 kB in 0s (5,775 kB/s)
     virtualbox-iso: Selecting previously unselected package language-pack-ja-base.
     virtualbox-iso: (Reading database ... 38203 files and directories currently installed.)
     virtualbox-iso: Preparing to unpack .../language-pack-ja-base_1%3a16.04+20160627_all.deb ...
@@ -1364,7 +1368,7 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: debconf: (This frontend requires a controlling tty.)
     virtualbox-iso: debconf: falling back to frontend: Teletype
     virtualbox-iso: dpkg-preconfigure: unable to re-open stdin:
-    virtualbox-iso: Fetched 10.4 MB in 12s (812 kB/s)
+    virtualbox-iso: Fetched 10.4 MB in 1s (6,866 kB/s)
     virtualbox-iso: Selecting previously unselected package libstdc++-5-dev:amd64.
     virtualbox-iso: (Reading database ... 38425 files and directories currently installed.)
     virtualbox-iso: Preparing to unpack .../libstdc++-5-dev_5.4.0-6ubuntu1~16.04.9_amd64.deb ...
@@ -2915,7 +2919,7 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: Get:751 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/universe amd64 exfat-utils amd64 1.2.3-1 [40.1 kB]
     virtualbox-iso: Get:752 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/universe amd64 libffmpegthumbnailer4v5 amd64 2.0.10-0.1 [24.5 kB]
     virtualbox-iso: Get:753 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/universe amd64 ffmpegthumbnailer amd64 2.0.10-0.1 [9,292 B]
-    virtualbox-iso: Get:754 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/main amd64 firefox amd64 59.0.1+build1-0ubuntu0.16.04.1 [44.5 MB]
+    virtualbox-iso: Get:754 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/main amd64 firefox amd64 59.0.2+build1-0ubuntu0.16.04.1 [44.6 MB]
     virtualbox-iso: Get:755 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/main amd64 gvfs-bin amd64 1.28.2-1ubuntu1~16.04.2 [55.2 kB]
     virtualbox-iso: Get:756 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates/main amd64 libgtk2.0-bin amd64 2.24.30-1ubuntu1.16.04.2 [9,834 B]
     virtualbox-iso: Get:757 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/universe amd64 folder-color-common all 0.0.79-0ubuntu1 [129 kB]
@@ -3635,7 +3639,7 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: debconf: (This frontend requires a controlling tty.)
     virtualbox-iso: debconf: falling back to frontend: Teletype
     virtualbox-iso: dpkg-preconfigure: unable to re-open stdin:
-    virtualbox-iso: Fetched 857 MB in 19min 45s (723 kB/s)
+    virtualbox-iso: Fetched 857 MB in 3min 3s (4,663 kB/s)
     virtualbox-iso: Selecting previously unselected package libxau6:amd64.
     virtualbox-iso: (Reading database ... 39460 files and directories currently installed.)
     virtualbox-iso: Preparing to unpack .../libxau6_1%3a1.0.8-1_amd64.deb ...
@@ -5989,8 +5993,8 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: Preparing to unpack .../ffmpegthumbnailer_2.0.10-0.1_amd64.deb ...
     virtualbox-iso: Unpacking ffmpegthumbnailer (2.0.10-0.1) ...
     virtualbox-iso: Selecting previously unselected package firefox.
-    virtualbox-iso: Preparing to unpack .../firefox_59.0.1+build1-0ubuntu0.16.04.1_amd64.deb ...
-    virtualbox-iso: Unpacking firefox (59.0.1+build1-0ubuntu0.16.04.1) ...
+    virtualbox-iso: Preparing to unpack .../firefox_59.0.2+build1-0ubuntu0.16.04.1_amd64.deb ...
+    virtualbox-iso: Unpacking firefox (59.0.2+build1-0ubuntu0.16.04.1) ...
     virtualbox-iso: Selecting previously unselected package gvfs-bin.
     virtualbox-iso: Preparing to unpack .../gvfs-bin_1.28.2-1ubuntu1~16.04.2_amd64.deb ...
     virtualbox-iso: Unpacking gvfs-bin (1.28.2-1ubuntu1~16.04.2) ...
@@ -9274,24 +9278,24 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
     virtualbox-iso: debconf: falling back to frontend: Readline
     virtualbox-iso: Generating grub configuration file ...
-    virtualbox-iso: File descriptor 3 (pipe:[146469]) leaked on vgs invocation. Parent PID 27581: /usr/sbin/grub-probe
-    virtualbox-iso: File descriptor 3 (pipe:[146469]) leaked on vgs invocation. Parent PID 27581: /usr/sbin/grub-probe
-    virtualbox-iso: File descriptor 3 (pipe:[146469]) leaked on vgs invocation. Parent PID 27594: /usr/sbin/grub-probe
-    virtualbox-iso: File descriptor 3 (pipe:[146469]) leaked on vgs invocation. Parent PID 27594: /usr/sbin/grub-probe
-    virtualbox-iso: File descriptor 3 (pipe:[146469]) leaked on vgs invocation. Parent PID 27607: /usr/sbin/grub-probe
-    virtualbox-iso: File descriptor 3 (pipe:[146469]) leaked on vgs invocation. Parent PID 27607: /usr/sbin/grub-probe
-    virtualbox-iso: File descriptor 3 (pipe:[146469]) leaked on vgs invocation. Parent PID 27620: /usr/sbin/grub-probe
-    virtualbox-iso: File descriptor 3 (pipe:[146469]) leaked on vgs invocation. Parent PID 27620: /usr/sbin/grub-probe
+    virtualbox-iso: File descriptor 3 (pipe:[146651]) leaked on vgs invocation. Parent PID 27774: /usr/sbin/grub-probe
+    virtualbox-iso: File descriptor 3 (pipe:[146651]) leaked on vgs invocation. Parent PID 27774: /usr/sbin/grub-probe
+    virtualbox-iso: File descriptor 3 (pipe:[146651]) leaked on vgs invocation. Parent PID 27787: /usr/sbin/grub-probe
+    virtualbox-iso: File descriptor 3 (pipe:[146651]) leaked on vgs invocation. Parent PID 27787: /usr/sbin/grub-probe
+    virtualbox-iso: File descriptor 3 (pipe:[146651]) leaked on vgs invocation. Parent PID 27800: /usr/sbin/grub-probe
+    virtualbox-iso: File descriptor 3 (pipe:[146651]) leaked on vgs invocation. Parent PID 27800: /usr/sbin/grub-probe
+    virtualbox-iso: File descriptor 3 (pipe:[146651]) leaked on vgs invocation. Parent PID 27813: /usr/sbin/grub-probe
+    virtualbox-iso: File descriptor 3 (pipe:[146651]) leaked on vgs invocation. Parent PID 27813: /usr/sbin/grub-probe
     virtualbox-iso: Warning: Setting GRUB_TIMEOUT to a non-zero value when GRUB_HIDDEN_TIMEOUT is set is no longer supported.
-    virtualbox-iso: File descriptor 3 (pipe:[146469]) leaked on vgs invocation. Parent PID 27682: /usr/sbin/grub-probe
-    virtualbox-iso: File descriptor 3 (pipe:[146469]) leaked on vgs invocation. Parent PID 27682: /usr/sbin/grub-probe
+    virtualbox-iso: File descriptor 3 (pipe:[146651]) leaked on vgs invocation. Parent PID 27875: /usr/sbin/grub-probe
+    virtualbox-iso: File descriptor 3 (pipe:[146651]) leaked on vgs invocation. Parent PID 27875: /usr/sbin/grub-probe
     virtualbox-iso: Found linux image: /boot/vmlinuz-4.4.0-87-generic
     virtualbox-iso: Found initrd image: /boot/initrd.img-4.4.0-87-generic
-    virtualbox-iso: File descriptor 3 (pipe:[146469]) leaked on vgs invocation. Parent PID 27957: /usr/sbin/grub-probe
-    virtualbox-iso: File descriptor 3 (pipe:[146469]) leaked on vgs invocation. Parent PID 27957: /usr/sbin/grub-probe
+    virtualbox-iso: File descriptor 3 (pipe:[146651]) leaked on vgs invocation. Parent PID 28158: /usr/sbin/grub-probe
+    virtualbox-iso: File descriptor 3 (pipe:[146651]) leaked on vgs invocation. Parent PID 28158: /usr/sbin/grub-probe
     virtualbox-iso: Found memtest86+ image: /memtest86+.elf
     virtualbox-iso: Found memtest86+ image: /memtest86+.bin
-    virtualbox-iso: File descriptor 3 (pipe:[146469]) leaked on lvs invocation. Parent PID 28108: /bin/sh
+    virtualbox-iso: File descriptor 3 (pipe:[146651]) leaked on lvs invocation. Parent PID 28311: /bin/sh
     virtualbox-iso: done
     virtualbox-iso: Setting up menu (2.1.47ubuntu1) ...
     virtualbox-iso: Setting up mesa-va-drivers:amd64 (17.2.8-0ubuntu0~16.04.1) ...
@@ -9523,155 +9527,155 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: Setting up bluez-obexd (5.37-0ubuntu5.1) ...
     virtualbox-iso: Setting up gnome-icon-theme (3.12.0-1ubuntu3) ...
     virtualbox-iso: Setting up ca-certificates-java (20160321ubuntu1) ...
-    virtualbox-iso: Adding debian:Certum_Trusted_Network_CA_2.pem
-    virtualbox-iso: Adding debian:TeliaSonera_Root_CA_v1.pem
-    virtualbox-iso: Adding debian:Hongkong_Post_Root_CA_1.pem
-    virtualbox-iso: Adding debian:CA_Disig_Root_R2.pem
-    virtualbox-iso: Adding debian:OpenTrust_Root_CA_G3.pem
-    virtualbox-iso: Adding debian:ssl-cert-snakeoil.pem
-    virtualbox-iso: Adding debian:GlobalSign_ECC_Root_CA_-_R4.pem
-    virtualbox-iso: Adding debian:GeoTrust_Global_CA_2.pem
-    virtualbox-iso: Adding debian:CFCA_EV_ROOT.pem
-    virtualbox-iso: Adding debian:AddTrust_Public_Services_Root.pem
-    virtualbox-iso: Adding debian:T-TeleSec_GlobalRoot_Class_2.pem
-    virtualbox-iso: Adding debian:DST_ACES_CA_X6.pem
-    virtualbox-iso: Adding debian:Global_Chambersign_Root_-_2008.pem
-    virtualbox-iso: Adding debian:Entrust_Root_Certification_Authority_-_EC1.pem
-    virtualbox-iso: Adding debian:Entrust_Root_Certification_Authority_-_G2.pem
-    virtualbox-iso: Adding debian:QuoVadis_Root_CA_1_G3.pem
-    virtualbox-iso: Adding debian:T-TeleSec_GlobalRoot_Class_3.pem
-    virtualbox-iso: Adding debian:COMODO_ECC_Certification_Authority.pem
-    virtualbox-iso: Adding debian:QuoVadis_Root_CA_2_G3.pem
-    virtualbox-iso: Adding debian:Certum_Trusted_Network_CA.pem
-    virtualbox-iso: Adding debian:GlobalSign_ECC_Root_CA_-_R5.pem
-    virtualbox-iso: Adding debian:Trustis_FPS_Root_CA.pem
-    virtualbox-iso: Adding debian:GlobalSign_Root_CA.pem
-    virtualbox-iso: Adding debian:thawte_Primary_Root_CA_-_G3.pem
-    virtualbox-iso: Adding debian:Certigna.pem
-    virtualbox-iso: Adding debian:AffirmTrust_Premium_ECC.pem
-    virtualbox-iso: Adding debian:GeoTrust_Primary_Certification_Authority_-_G3.pem
-    virtualbox-iso: Adding debian:Certplus_Root_CA_G1.pem
-    virtualbox-iso: Adding debian:AffirmTrust_Commercial.pem
-    virtualbox-iso: Adding debian:AddTrust_Low-Value_Services_Root.pem
-    virtualbox-iso: Adding debian:TÜRKTRUST_Elektronik_Sertifika_Hizmet_Sağlayıcısı_H5.pem
-    virtualbox-iso: Adding debian:Secure_Global_CA.pem
-    virtualbox-iso: Adding debian:Starfield_Class_2_CA.pem
-    virtualbox-iso: Adding debian:AddTrust_Qualified_Certificates_Root.pem
-    virtualbox-iso: Adding debian:E-Tugra_Certification_Authority.pem
-    virtualbox-iso: Adding debian:EE_Certification_Centre_Root_CA.pem
-    virtualbox-iso: Adding debian:DigiCert_Assured_ID_Root_G3.pem
-    virtualbox-iso: Adding debian:XRamp_Global_CA_Root.pem
-    virtualbox-iso: Adding debian:Swisscom_Root_CA_2.pem
-    virtualbox-iso: Adding debian:Cybertrust_Global_Root.pem
-    virtualbox-iso: Adding debian:Buypass_Class_3_Root_CA.pem
-    virtualbox-iso: Adding debian:Comodo_Secure_Services_root.pem
-    virtualbox-iso: Adding debian:COMODO_RSA_Certification_Authority.pem
-    virtualbox-iso: Adding debian:ISRG_Root_X1.pem
-    virtualbox-iso: Adding debian:Comodo_Trusted_Services_root.pem
-    virtualbox-iso: Adding debian:QuoVadis_Root_CA_3_G3.pem
-    virtualbox-iso: Adding debian:USERTrust_RSA_Certification_Authority.pem
-    virtualbox-iso: Adding debian:GlobalSign_Root_CA_-_R2.pem
-    virtualbox-iso: Adding debian:AC_RAIZ_FNMT-RCM.pem
-    virtualbox-iso: Adding debian:PSCProcert.pem
-    virtualbox-iso: Adding debian:Swisscom_Root_EV_CA_2.pem
-    virtualbox-iso: Adding debian:Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.pem
-    virtualbox-iso: Adding debian:Security_Communication_Root_CA.pem
-    virtualbox-iso: Adding debian:IdenTrust_Commercial_Root_CA_1.pem
-    virtualbox-iso: Adding debian:Staat_der_Nederlanden_Root_CA_-_G2.pem
-    virtualbox-iso: Adding debian:CNNIC_ROOT.pem
-    virtualbox-iso: Adding debian:AddTrust_External_Root.pem
-    virtualbox-iso: Adding debian:thawte_Primary_Root_CA_-_G2.pem
-    virtualbox-iso: Adding debian:NetLock_Arany_=Class_Gold=_Főtanúsítvány.pem
-    virtualbox-iso: Adding debian:SecureSign_RootCA11.pem
-    virtualbox-iso: Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2015.pem
-    virtualbox-iso: Adding debian:D-TRUST_Root_Class_3_CA_2_EV_2009.pem
-    virtualbox-iso: Adding debian:Camerfirma_Chambers_of_Commerce_Root.pem
-    virtualbox-iso: Adding debian:GeoTrust_Primary_Certification_Authority.pem
-    virtualbox-iso: Adding debian:Entrust_Root_Certification_Authority.pem
-    virtualbox-iso: Adding debian:CA_Disig_Root_R1.pem
-    virtualbox-iso: Adding debian:Swisscom_Root_CA_1.pem
-    virtualbox-iso: Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2011.pem
-    virtualbox-iso: Adding debian:IdenTrust_Public_Sector_Root_CA_1.pem
-    virtualbox-iso: Adding debian:Entrust.net_Premium_2048_Secure_Server_CA.pem
-    virtualbox-iso: Adding debian:Certinomis_-_Autorité_Racine.pem
-    virtualbox-iso: Adding debian:VeriSign_Class_3_Public_Primary_Certification_Authority_-_G5.pem
-    virtualbox-iso: Adding debian:GeoTrust_Universal_CA.pem
-    virtualbox-iso: Adding debian:certSIGN_ROOT_CA.pem
-    virtualbox-iso: Adding debian:Chambers_of_Commerce_Root_-_2008.pem
-    virtualbox-iso: Adding debian:Taiwan_GRCA.pem
     virtualbox-iso: Adding debian:Camerfirma_Global_Chambersign_Root.pem
-    virtualbox-iso: Adding debian:Security_Communication_EV_RootCA1.pem
-    virtualbox-iso: Adding debian:DigiCert_High_Assurance_EV_Root_CA.pem
-    virtualbox-iso: Adding debian:Certplus_Root_CA_G2.pem
-    virtualbox-iso: Adding debian:Amazon_Root_CA_2.pem
-    virtualbox-iso: Adding debian:QuoVadis_Root_CA_3.pem
-    virtualbox-iso: Adding debian:Amazon_Root_CA_1.pem
-    virtualbox-iso: Adding debian:DigiCert_Global_Root_CA.pem
-    virtualbox-iso: Adding debian:Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.pem
-    virtualbox-iso: Adding debian:VeriSign_Class_3_Public_Primary_Certification_Authority_-_G4.pem
-    virtualbox-iso: Adding debian:DigiCert_Global_Root_G2.pem
-    virtualbox-iso: Adding debian:OpenTrust_Root_CA_G1.pem
-    virtualbox-iso: Adding debian:DigiCert_Trusted_Root_G4.pem
-    virtualbox-iso: Adding debian:Comodo_AAA_Services_root.pem
-    virtualbox-iso: Adding debian:COMODO_Certification_Authority.pem
-    virtualbox-iso: Adding debian:Amazon_Root_CA_3.pem
-    virtualbox-iso: Adding debian:GeoTrust_Global_CA.pem
-    virtualbox-iso: Adding debian:Certplus_Class_2_Primary_CA.pem
-    virtualbox-iso: Adding debian:Staat_der_Nederlanden_Root_CA_-_G3.pem
-    virtualbox-iso: Adding debian:ACEDICOM_Root.pem
-    virtualbox-iso: Adding debian:Go_Daddy_Class_2_CA.pem
-    virtualbox-iso: Adding debian:Izenpe.com.pem
-    virtualbox-iso: Adding debian:Certinomis_-_Root_CA.pem
-    virtualbox-iso: Adding debian:Sonera_Class_2_Root_CA.pem
-    virtualbox-iso: Adding debian:ACCVRAIZ1.pem
-    virtualbox-iso: Adding debian:UTN_USERFirst_Hardware_Root_CA.pem
-    virtualbox-iso: Adding debian:Actalis_Authentication_Root_CA.pem
-    virtualbox-iso: Adding debian:VeriSign_Universal_Root_Certification_Authority.pem
-    virtualbox-iso: Adding debian:Certum_Root_CA.pem
-    virtualbox-iso: Adding debian:Starfield_Services_Root_Certificate_Authority_-_G2.pem
-    virtualbox-iso: Adding debian:Deutsche_Telekom_Root_CA_2.pem
-    virtualbox-iso: Adding debian:LuxTrust_Global_Root_2.pem
-    virtualbox-iso: Adding debian:Starfield_Root_Certificate_Authority_-_G2.pem
-    virtualbox-iso: Adding debian:AffirmTrust_Networking.pem
-    virtualbox-iso: Adding debian:QuoVadis_Root_CA.pem
-    virtualbox-iso: Adding debian:GlobalSign_Root_CA_-_R3.pem
-    virtualbox-iso: Adding debian:OpenTrust_Root_CA_G2.pem
-    virtualbox-iso: Adding debian:SZAFIR_ROOT_CA2.pem
-    virtualbox-iso: Adding debian:Staat_der_Nederlanden_EV_Root_CA.pem
-    virtualbox-iso: Adding debian:DigiCert_Assured_ID_Root_CA.pem
-    virtualbox-iso: Adding debian:USERTrust_ECC_Certification_Authority.pem
-    virtualbox-iso: Adding debian:EC-ACC.pem
-    virtualbox-iso: Adding debian:Network_Solutions_Certificate_Authority.pem
     virtualbox-iso: Adding debian:OISTE_WISeKey_Global_Root_GB_CA.pem
-    virtualbox-iso: Adding debian:Buypass_Class_2_Root_CA.pem
+    virtualbox-iso: Adding debian:NetLock_Arany_=Class_Gold=_Főtanúsítvány.pem
+    virtualbox-iso: Adding debian:Amazon_Root_CA_1.pem
+    virtualbox-iso: Adding debian:T-TeleSec_GlobalRoot_Class_2.pem
+    virtualbox-iso: Adding debian:AddTrust_Low-Value_Services_Root.pem
+    virtualbox-iso: Adding debian:CFCA_EV_ROOT.pem
+    virtualbox-iso: Adding debian:Entrust_Root_Certification_Authority_-_G2.pem
+    virtualbox-iso: Adding debian:Visa_eCommerce_Root.pem
+    virtualbox-iso: Adding debian:Certplus_Root_CA_G2.pem
+    virtualbox-iso: Adding debian:China_Internet_Network_Information_Center_EV_Certificates_Root.pem
+    virtualbox-iso: Adding debian:ACEDICOM_Root.pem
+    virtualbox-iso: Adding debian:CA_Disig_Root_R2.pem
+    virtualbox-iso: Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2015.pem
+    virtualbox-iso: Adding debian:CNNIC_ROOT.pem
+    virtualbox-iso: Adding debian:Staat_der_Nederlanden_EV_Root_CA.pem
+    virtualbox-iso: Adding debian:certSIGN_ROOT_CA.pem
+    virtualbox-iso: Adding debian:Security_Communication_EV_RootCA1.pem
+    virtualbox-iso: Adding debian:Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.pem
+    virtualbox-iso: Adding debian:AffirmTrust_Networking.pem
+    virtualbox-iso: Adding debian:Network_Solutions_Certificate_Authority.pem
+    virtualbox-iso: Adding debian:Entrust_Root_Certification_Authority.pem
+    virtualbox-iso: Adding debian:AddTrust_External_Root.pem
+    virtualbox-iso: Adding debian:GeoTrust_Primary_Certification_Authority.pem
+    virtualbox-iso: Adding debian:QuoVadis_Root_CA_1_G3.pem
+    virtualbox-iso: Adding debian:VeriSign_Class_3_Public_Primary_Certification_Authority_-_G4.pem
+    virtualbox-iso: Adding debian:COMODO_Certification_Authority.pem
+    virtualbox-iso: Adding debian:DigiCert_Global_Root_G2.pem
+    virtualbox-iso: Adding debian:ACCVRAIZ1.pem
+    virtualbox-iso: Adding debian:Certinomis_-_Autorité_Racine.pem
+    virtualbox-iso: Adding debian:Entrust.net_Premium_2048_Secure_Server_CA.pem
+    virtualbox-iso: Adding debian:Cybertrust_Global_Root.pem
+    virtualbox-iso: Adding debian:EE_Certification_Centre_Root_CA.pem
+    virtualbox-iso: Adding debian:Staat_der_Nederlanden_Root_CA_-_G2.pem
+    virtualbox-iso: Adding debian:Go_Daddy_Root_Certificate_Authority_-_G2.pem
+    virtualbox-iso: Adding debian:DigiCert_Assured_ID_Root_CA.pem
+    virtualbox-iso: Adding debian:DigiCert_Global_Root_G3.pem
+    virtualbox-iso: Adding debian:AddTrust_Qualified_Certificates_Root.pem
+    virtualbox-iso: Adding debian:DigiCert_High_Assurance_EV_Root_CA.pem
+    virtualbox-iso: Adding debian:Swisscom_Root_EV_CA_2.pem
+    virtualbox-iso: Adding debian:DigiCert_Global_Root_CA.pem
+    virtualbox-iso: Adding debian:Izenpe.com.pem
+    virtualbox-iso: Adding debian:USERTrust_ECC_Certification_Authority.pem
+    virtualbox-iso: Adding debian:Certigna.pem
+    virtualbox-iso: Adding debian:DigiCert_Assured_ID_Root_G2.pem
+    virtualbox-iso: Adding debian:XRamp_Global_CA_Root.pem
+    virtualbox-iso: Adding debian:GeoTrust_Universal_CA.pem
+    virtualbox-iso: Adding debian:AC_RAIZ_FNMT-RCM.pem
+    virtualbox-iso: Adding debian:Actalis_Authentication_Root_CA.pem
+    virtualbox-iso: Adding debian:Amazon_Root_CA_2.pem
+    virtualbox-iso: Adding debian:thawte_Primary_Root_CA_-_G2.pem
+    virtualbox-iso: Adding debian:OpenTrust_Root_CA_G1.pem
+    virtualbox-iso: Adding debian:QuoVadis_Root_CA_3.pem
+    virtualbox-iso: Adding debian:Swisscom_Root_CA_2.pem
+    virtualbox-iso: Adding debian:VeriSign_Class_3_Public_Primary_Certification_Authority_-_G5.pem
+    virtualbox-iso: Adding debian:Certum_Root_CA.pem
+    virtualbox-iso: Adding debian:Microsec_e-Szigno_Root_CA_2009.pem
+    virtualbox-iso: Adding debian:ISRG_Root_X1.pem
+    virtualbox-iso: Adding debian:Starfield_Services_Root_Certificate_Authority_-_G2.pem
+    virtualbox-iso: Adding debian:AffirmTrust_Premium_ECC.pem
+    virtualbox-iso: Adding debian:EC-ACC.pem
+    virtualbox-iso: Adding debian:Entrust_Root_Certification_Authority_-_EC1.pem
     virtualbox-iso: Adding debian:SecureTrust_CA.pem
+    virtualbox-iso: Adding debian:Certum_Trusted_Network_CA.pem
     virtualbox-iso: Adding debian:Amazon_Root_CA_4.pem
-    virtualbox-iso: Adding debian:ePKI_Root_Certification_Authority.pem
-    virtualbox-iso: Adding debian:TWCA_Root_Certification_Authority.pem
+    virtualbox-iso: Adding debian:Certum_Trusted_Network_CA_2.pem
+    virtualbox-iso: Adding debian:Global_Chambersign_Root_-_2008.pem
+    virtualbox-iso: Adding debian:COMODO_RSA_Certification_Authority.pem
+    virtualbox-iso: Adding debian:Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.pem
+    virtualbox-iso: Adding debian:QuoVadis_Root_CA_3_G3.pem
+    virtualbox-iso: Adding debian:GlobalSign_Root_CA_-_R3.pem
+    virtualbox-iso: Adding debian:PSCProcert.pem
+    virtualbox-iso: Adding debian:Secure_Global_CA.pem
+    virtualbox-iso: Adding debian:QuoVadis_Root_CA.pem
+    virtualbox-iso: Adding debian:OpenTrust_Root_CA_G2.pem
+    virtualbox-iso: Adding debian:D-TRUST_Root_Class_3_CA_2_EV_2009.pem
+    virtualbox-iso: Adding debian:Security_Communication_RootCA2.pem
+    virtualbox-iso: Adding debian:AffirmTrust_Commercial.pem
+    virtualbox-iso: Adding debian:TURKTRUST_Certificate_Services_Provider_Root_2007.pem
     virtualbox-iso: Adding debian:D-TRUST_Root_Class_3_CA_2_2009.pem
-    virtualbox-iso: Adding debian:GeoTrust_Primary_Certification_Authority_-_G2.pem
-    virtualbox-iso: Adding debian:TWCA_Global_Root_CA.pem
+    virtualbox-iso: Adding debian:Atos_TrustedRoot_2011.pem
     virtualbox-iso: Adding debian:DST_Root_CA_X3.pem
     virtualbox-iso: Adding debian:OISTE_WISeKey_Global_Root_GA_CA.pem
-    virtualbox-iso: Adding debian:TÜBİTAK_UEKAE_Kök_Sertifika_Hizmet_Sağlayıcısı_-_Sürüm_3.pem
-    virtualbox-iso: Adding debian:Verisign_Class_3_Public_Primary_Certification_Authority_-_G3.pem
-    virtualbox-iso: Adding debian:GeoTrust_Universal_CA_2.pem
-    virtualbox-iso: Adding debian:TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.pem
-    virtualbox-iso: Adding debian:DigiCert_Global_Root_G3.pem
-    virtualbox-iso: Adding debian:DigiCert_Assured_ID_Root_G2.pem
-    virtualbox-iso: Adding debian:Baltimore_CyberTrust_Root.pem
-    virtualbox-iso: Adding debian:Security_Communication_RootCA2.pem
-    virtualbox-iso: Adding debian:thawte_Primary_Root_CA.pem
-    virtualbox-iso: Adding debian:TURKTRUST_Certificate_Services_Provider_Root_2007.pem
-    virtualbox-iso: Adding debian:QuoVadis_Root_CA_2.pem
+    virtualbox-iso: Adding debian:thawte_Primary_Root_CA_-_G3.pem
+    virtualbox-iso: Adding debian:Comodo_Secure_Services_root.pem
+    virtualbox-iso: Adding debian:DigiCert_Assured_ID_Root_G3.pem
+    virtualbox-iso: Adding debian:Camerfirma_Chambers_of_Commerce_Root.pem
+    virtualbox-iso: Adding debian:GeoTrust_Primary_Certification_Authority_-_G2.pem
+    virtualbox-iso: Adding debian:Starfield_Class_2_CA.pem
+    virtualbox-iso: Adding debian:DigiCert_Trusted_Root_G4.pem
+    virtualbox-iso: Adding debian:Go_Daddy_Class_2_CA.pem
     virtualbox-iso: Adding debian:SwissSign_Gold_CA_-_G2.pem
-    virtualbox-iso: Adding debian:Go_Daddy_Root_Certificate_Authority_-_G2.pem
-    virtualbox-iso: Adding debian:China_Internet_Network_Information_Center_EV_Certificates_Root.pem
-    virtualbox-iso: Adding debian:Atos_TrustedRoot_2011.pem
+    virtualbox-iso: Adding debian:Buypass_Class_2_Root_CA.pem
+    virtualbox-iso: Adding debian:TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.pem
+    virtualbox-iso: Adding debian:Certplus_Class_2_Primary_CA.pem
+    virtualbox-iso: Adding debian:GeoTrust_Global_CA_2.pem
+    virtualbox-iso: Adding debian:Verisign_Class_3_Public_Primary_Certification_Authority_-_G3.pem
+    virtualbox-iso: Adding debian:Trustis_FPS_Root_CA.pem
+    virtualbox-iso: Adding debian:IdenTrust_Public_Sector_Root_CA_1.pem
     virtualbox-iso: Adding debian:AffirmTrust_Premium.pem
-    virtualbox-iso: Adding debian:Visa_eCommerce_Root.pem
+    virtualbox-iso: Adding debian:Sonera_Class_2_Root_CA.pem
+    virtualbox-iso: Adding debian:Certplus_Root_CA_G1.pem
+    virtualbox-iso: Adding debian:Baltimore_CyberTrust_Root.pem
+    virtualbox-iso: Adding debian:VeriSign_Universal_Root_Certification_Authority.pem
+    virtualbox-iso: Adding debian:Hongkong_Post_Root_CA_1.pem
+    virtualbox-iso: Adding debian:LuxTrust_Global_Root_2.pem
+    virtualbox-iso: Adding debian:Staat_der_Nederlanden_Root_CA_-_G3.pem
+    virtualbox-iso: Adding debian:Certinomis_-_Root_CA.pem
+    virtualbox-iso: Adding debian:USERTrust_RSA_Certification_Authority.pem
+    virtualbox-iso: Adding debian:TÜRKTRUST_Elektronik_Sertifika_Hizmet_Sağlayıcısı_H5.pem
+    virtualbox-iso: Adding debian:TeliaSonera_Root_CA_v1.pem
+    virtualbox-iso: Adding debian:GlobalSign_ECC_Root_CA_-_R5.pem
+    virtualbox-iso: Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2011.pem
+    virtualbox-iso: Adding debian:IdenTrust_Commercial_Root_CA_1.pem
+    virtualbox-iso: Adding debian:GlobalSign_Root_CA.pem
+    virtualbox-iso: Adding debian:ePKI_Root_Certification_Authority.pem
     virtualbox-iso: Adding debian:SwissSign_Silver_CA_-_G2.pem
-    virtualbox-iso: Adding debian:Microsec_e-Szigno_Root_CA_2009.pem
+    virtualbox-iso: Adding debian:COMODO_ECC_Certification_Authority.pem
+    virtualbox-iso: Adding debian:TWCA_Root_Certification_Authority.pem
+    virtualbox-iso: Adding debian:Swisscom_Root_CA_1.pem
+    virtualbox-iso: Adding debian:Deutsche_Telekom_Root_CA_2.pem
+    virtualbox-iso: Adding debian:Taiwan_GRCA.pem
+    virtualbox-iso: Adding debian:QuoVadis_Root_CA_2_G3.pem
+    virtualbox-iso: Adding debian:DST_ACES_CA_X6.pem
+    virtualbox-iso: Adding debian:GeoTrust_Global_CA.pem
+    virtualbox-iso: Adding debian:ssl-cert-snakeoil.pem
+    virtualbox-iso: Adding debian:SZAFIR_ROOT_CA2.pem
+    virtualbox-iso: Adding debian:T-TeleSec_GlobalRoot_Class_3.pem
+    virtualbox-iso: Adding debian:Starfield_Root_Certificate_Authority_-_G2.pem
+    virtualbox-iso: Adding debian:Security_Communication_Root_CA.pem
+    virtualbox-iso: Adding debian:Amazon_Root_CA_3.pem
+    virtualbox-iso: Adding debian:OpenTrust_Root_CA_G3.pem
+    virtualbox-iso: Adding debian:TWCA_Global_Root_CA.pem
+    virtualbox-iso: Adding debian:SecureSign_RootCA11.pem
+    virtualbox-iso: Adding debian:UTN_USERFirst_Hardware_Root_CA.pem
+    virtualbox-iso: Adding debian:E-Tugra_Certification_Authority.pem
+    virtualbox-iso: Adding debian:Chambers_of_Commerce_Root_-_2008.pem
+    virtualbox-iso: Adding debian:QuoVadis_Root_CA_2.pem
+    virtualbox-iso: Adding debian:GlobalSign_ECC_Root_CA_-_R4.pem
+    virtualbox-iso: Adding debian:thawte_Primary_Root_CA.pem
+    virtualbox-iso: Adding debian:Comodo_Trusted_Services_root.pem
+    virtualbox-iso: Adding debian:GeoTrust_Primary_Certification_Authority_-_G3.pem
+    virtualbox-iso: Adding debian:GlobalSign_Root_CA_-_R2.pem
+    virtualbox-iso: Adding debian:CA_Disig_Root_R1.pem
+    virtualbox-iso: Adding debian:TÜBİTAK_UEKAE_Kök_Sertifika_Hizmet_Sağlayıcısı_-_Sürüm_3.pem
+    virtualbox-iso: Adding debian:AddTrust_Public_Services_Root.pem
+    virtualbox-iso: Adding debian:GeoTrust_Universal_CA_2.pem
+    virtualbox-iso: Adding debian:Comodo_AAA_Services_root.pem
+    virtualbox-iso: Adding debian:Buypass_Class_3_Root_CA.pem
     virtualbox-iso: done.
     virtualbox-iso: Setting up openjdk-8-jre-headless:amd64 (8u151-b12-0ubuntu0.16.04.2) ...
     virtualbox-iso: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/rmid to provide /usr/bin/rmid (rmid) in auto mode
@@ -9777,7 +9781,7 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: Setting up deja-dup-caja (0.0.4-0ubuntu2) ...
     virtualbox-iso: Setting up libgweather-3-6:amd64 (3.18.2-0ubuntu0.2) ...
     virtualbox-iso: Setting up evolution-data-server (3.18.5-1ubuntu1) ...
-    virtualbox-iso: Setting up firefox (59.0.1+build1-0ubuntu0.16.04.1) ...
+    virtualbox-iso: Setting up firefox (59.0.2+build1-0ubuntu0.16.04.1) ...
     virtualbox-iso: update-alternatives: using /usr/bin/firefox to provide /usr/bin/gnome-www-browser (gnome-www-browser) in auto mode
     virtualbox-iso: update-alternatives: using /usr/bin/firefox to provide /usr/bin/x-www-browser (x-www-browser) in auto mode
     virtualbox-iso: Please restart all running instances of firefox, or you will experience problems.
@@ -9976,206 +9980,206 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: debconf: (This frontend requires a controlling tty.)
     virtualbox-iso: debconf: falling back to frontend: Teletype
     virtualbox-iso: dpkg-preconfigure: unable to re-open stdin:
-    virtualbox-iso: Fetched 5,620 B in 0s (7,535 B/s)
+    virtualbox-iso: Fetched 5,620 B in 0s (44.8 kB/s)
     virtualbox-iso: Selecting previously unselected package pepperflashplugin-nonfree.
     virtualbox-iso: (Reading database ... 189241 files and directories currently installed.)
     virtualbox-iso: Preparing to unpack .../pepperflashplugin-nonfree_1.8.2ubuntu1.1_amd64.deb ...
     virtualbox-iso: Unpacking pepperflashplugin-nonfree (1.8.2ubuntu1.1) ...
     virtualbox-iso: Setting up pepperflashplugin-nonfree (1.8.2ubuntu1.1) ...
-    virtualbox-iso: --2018-03-27 20:26:46--  https://fpdownload.adobe.com/pub/flashplayer/pdc/29.0.0.113/flash_player_ppapi_linux.x86_64.tar.gz
-    virtualbox-iso: Resolving fpdownload.adobe.com (fpdownload.adobe.com)... 104.118.68.150, 2600:140b:7000:284::11e2, 2600:140b:7000:291::11e2
-    virtualbox-iso: Connecting to fpdownload.adobe.com (fpdownload.adobe.com)|104.118.68.150|:443... connected.
+    virtualbox-iso: --2018-03-28 16:38:30--  https://fpdownload.adobe.com/pub/flashplayer/pdc/29.0.0.113/flash_player_ppapi_linux.x86_64.tar.gz
+    virtualbox-iso: Resolving fpdownload.adobe.com (fpdownload.adobe.com)... 23.34.33.179, 2600:140b:7000:284::11e2, 2600:140b:7000:291::11e2
+    virtualbox-iso: Connecting to fpdownload.adobe.com (fpdownload.adobe.com)|23.34.33.179|:443... connected.
     virtualbox-iso: HTTP request sent, awaiting response... 200 OK
     virtualbox-iso: Length: 9464970 (9.0M) [application/x-gzip]
     virtualbox-iso: Saving to: ‘STDOUT’
     virtualbox-iso:
-    virtualbox-iso:      0K .......... .......... .......... .......... ..........  0% 2.86M 3s
-    virtualbox-iso:     50K .......... .......... .......... .......... ..........  1% 3.41M 3s
-    virtualbox-iso:    100K .......... .......... .......... .......... ..........  1% 3.95M 3s
-    virtualbox-iso:    150K .......... .......... .......... .......... ..........  2% 3.92M 3s
-    virtualbox-iso:    200K .......... .......... .......... .......... ..........  2% 8.58M 2s
-    virtualbox-iso:    250K .......... .......... .......... .......... ..........  3% 14.6M 2s
-    virtualbox-iso:    300K .......... .......... .......... .......... ..........  3% 8.33M 2s
-    virtualbox-iso:    350K .......... .......... .......... .......... ..........  4% 10.6M 2s
-    virtualbox-iso:    400K .......... .......... .......... .......... ..........  4% 9.27M 2s
-    virtualbox-iso:    450K .......... .......... .......... .......... ..........  5% 11.8M 1s
-    virtualbox-iso:    500K .......... .......... .......... .......... ..........  5% 2.25M 2s
-    virtualbox-iso:    550K .......... .......... .......... .......... ..........  6% 25.4M 2s
-    virtualbox-iso:    600K .......... .......... .......... .......... ..........  7% 28.0M 1s
-    virtualbox-iso:    650K .......... .......... .......... .......... ..........  7% 10.4M 1s
-    virtualbox-iso:    700K .......... .......... .......... .......... ..........  8% 9.50M 1s
-    virtualbox-iso:    750K .......... .......... .......... .......... ..........  8% 13.6M 1s
-    virtualbox-iso:    800K .......... .......... .......... .......... ..........  9% 10.5M 1s
-    virtualbox-iso:    850K .......... .......... .......... .......... ..........  9% 9.24M 1s
-    virtualbox-iso:    900K .......... .......... .......... .......... .......... 10% 14.3M 1s
-    virtualbox-iso:    950K .......... .......... .......... .......... .......... 10% 9.86M 1s
-    virtualbox-iso:   1000K .......... .......... .......... .......... .......... 11% 14.3M 1s
-    virtualbox-iso:   1050K .......... .......... .......... .......... .......... 11% 7.84M 1s
-    virtualbox-iso:   1100K .......... .......... .......... .......... .......... 12% 14.2M 1s
-    virtualbox-iso:   1150K .......... .......... .......... .......... .......... 12% 9.80M 1s
-    virtualbox-iso:   1200K .......... .......... .......... .......... .......... 13% 2.17M 1s
-    virtualbox-iso:   1250K .......... .......... .......... .......... .......... 14% 20.5M 1s
-    virtualbox-iso:   1300K .......... .......... .......... .......... .......... 14% 10.6M 1s
-    virtualbox-iso:   1350K .......... .......... .......... .......... .......... 15% 33.7M 1s
-    virtualbox-iso:   1400K .......... .......... .......... .......... .......... 15% 12.6M 1s
-    virtualbox-iso:   1450K .......... .......... .......... .......... .......... 16% 24.5M 1s
-    virtualbox-iso:   1500K .......... .......... .......... .......... .......... 16% 14.2M 1s
-    virtualbox-iso:   1550K .......... .......... .......... .......... .......... 17% 20.7M 1s
-    virtualbox-iso:   1600K .......... .......... .......... .......... .......... 17% 13.5M 1s
-    virtualbox-iso:   1650K .......... .......... .......... .......... .......... 18% 16.7M 1s
-    virtualbox-iso:   1700K .......... .......... .......... .......... .......... 18% 11.9M 1s
-    virtualbox-iso:   1750K .......... .......... .......... .......... .......... 19% 20.8M 1s
-    virtualbox-iso:   1800K .......... .......... .......... .......... .......... 20% 12.5M 1s
-    virtualbox-iso:   1850K .......... .......... .......... .......... .......... 20% 1.85M 1s
-    virtualbox-iso:   1900K .......... .......... .......... .......... .......... 21% 1.84M 1s
-    virtualbox-iso:   1950K .......... .......... .......... .......... .......... 21% 19.5M 1s
-    virtualbox-iso:   2000K .......... .......... .......... .......... .......... 22% 35.5M 1s
-    virtualbox-iso:   2050K .......... .......... .......... .......... .......... 22% 15.8M 1s
-    virtualbox-iso:   2100K .......... .......... .......... .......... .......... 23% 24.1M 1s
-    virtualbox-iso:   2150K .......... .......... .......... .......... .......... 23% 19.9M 1s
-    virtualbox-iso:   2200K .......... .......... .......... .......... .......... 24% 14.3M 1s
-    virtualbox-iso:   2250K .......... .......... .......... .......... .......... 24% 14.0M 1s
-    virtualbox-iso:   2300K .......... .......... .......... .......... .......... 25% 13.2M 1s
-    virtualbox-iso:   2350K .......... .......... .......... .......... .......... 25% 14.5M 1s
-    virtualbox-iso:   2400K .......... .......... .......... .......... .......... 26% 1.80M 1s
-    virtualbox-iso:   2450K .......... .......... .......... .......... .......... 27% 20.0M 1s
-    virtualbox-iso:   2500K .......... .......... .......... .......... .......... 27% 15.6M 1s
-    virtualbox-iso:   2550K .......... .......... .......... .......... .......... 28% 17.8M 1s
-    virtualbox-iso:   2600K .......... .......... .......... .......... .......... 28% 24.2M 1s
-    virtualbox-iso:   2650K .......... .......... .......... .......... .......... 29% 18.2M 1s
-    virtualbox-iso:   2700K .......... .......... .......... .......... .......... 29% 26.4M 1s
-    virtualbox-iso:   2750K .......... .......... .......... .......... .......... 30% 10.3M 1s
-    virtualbox-iso:   2800K .......... .......... .......... .......... .......... 30% 16.0M 1s
-    virtualbox-iso:   2850K .......... .......... .......... .......... .......... 31% 12.4M 1s
-    virtualbox-iso:   2900K .......... .......... .......... .......... .......... 31% 10.8M 1s
-    virtualbox-iso:   2950K .......... .......... .......... .......... .......... 32% 13.1M 1s
-    virtualbox-iso:   3000K .......... .......... .......... .......... .......... 32% 1.73M 1s
-    virtualbox-iso:   3050K .......... .......... .......... .......... .......... 33% 49.4M 1s
-    virtualbox-iso:   3100K .......... .......... .......... .......... .......... 34% 33.4M 1s
-    virtualbox-iso:   3150K .......... .......... .......... .......... .......... 34% 2.03M 1s
-    virtualbox-iso:   3200K .......... .......... .......... .......... .......... 35% 20.7M 1s
-    virtualbox-iso:   3250K .......... .......... .......... .......... .......... 35% 25.1M 1s
-    virtualbox-iso:   3300K .......... .......... .......... .......... .......... 36% 26.3M 1s
-    virtualbox-iso:   3350K .......... .......... .......... .......... .......... 36% 40.3M 1s
-    virtualbox-iso:   3400K .......... .......... .......... .......... .......... 37% 17.5M 1s
-    virtualbox-iso:   3450K .......... .......... .......... .......... .......... 37% 25.0M 1s
-    virtualbox-iso:   3500K .......... .......... .......... .......... .......... 38% 11.0M 1s
-    virtualbox-iso:   3550K .......... .......... .......... .......... .......... 38% 14.4M 1s
-    virtualbox-iso:   3600K .......... .......... .......... .......... .......... 39% 12.3M 1s
-    virtualbox-iso:   3650K .......... .......... .......... .......... .......... 40% 8.28M 1s
-    virtualbox-iso:   3700K .......... .......... .......... .......... .......... 40% 18.5M 1s
-    virtualbox-iso:   3750K .......... .......... .......... .......... .......... 41% 8.85M 1s
-    virtualbox-iso:   3800K .......... .......... .......... .......... .......... 41% 15.1M 1s
-    virtualbox-iso:   3850K .......... .......... .......... .......... .......... 42% 9.14M 1s
-    virtualbox-iso:   3900K .......... .......... .......... .......... .......... 42% 17.3M 1s
-    virtualbox-iso:   3950K .......... .......... .......... .......... .......... 43% 1.79M 1s
-    virtualbox-iso:   4000K .......... .......... .......... .......... .......... 43% 28.9M 1s
-    virtualbox-iso:   4050K .......... .......... .......... .......... .......... 44% 17.3M 1s
-    virtualbox-iso:   4100K .......... .......... .......... .......... .......... 44% 13.1M 1s
-    virtualbox-iso:   4150K .......... .......... .......... .......... .......... 45% 16.1M 1s
-    virtualbox-iso:   4200K .......... .......... .......... .......... .......... 45% 39.6M 1s
-    virtualbox-iso:   4250K .......... .......... .......... .......... .......... 46% 17.7M 1s
-    virtualbox-iso:   4300K .......... .......... .......... .......... .......... 47% 10.5M 1s
-    virtualbox-iso:   4350K .......... .......... .......... .......... .......... 47% 14.2M 1s
-    virtualbox-iso:   4400K .......... .......... .......... .......... .......... 48% 20.2M 1s
-    virtualbox-iso:   4450K .......... .......... .......... .......... .......... 48% 2.35M 1s
-    virtualbox-iso:   4500K .......... .......... .......... .......... .......... 49% 26.6M 1s
-    virtualbox-iso:   4550K .......... .......... .......... .......... .......... 49% 2.03M 1s
-    virtualbox-iso:   4600K .......... .......... .......... .......... .......... 50% 22.7M 1s
-    virtualbox-iso:   4650K .......... .......... .......... .......... .......... 50% 39.9M 1s
-    virtualbox-iso:   4700K .......... .......... .......... .......... .......... 51% 17.7M 1s
-    virtualbox-iso:   4750K .......... .......... .......... .......... .......... 51% 23.7M 1s
-    virtualbox-iso:   4800K .......... .......... .......... .......... .......... 52% 16.7M 1s
-    virtualbox-iso:   4850K .......... .......... .......... .......... .......... 53% 16.4M 1s
-    virtualbox-iso:   4900K .......... .......... .......... .......... .......... 53% 14.3M 1s
-    virtualbox-iso:   4950K .......... .......... .......... .......... .......... 54% 12.3M 0s
-    virtualbox-iso:   5000K .......... .......... .......... .......... .......... 54% 16.4M 0s
-    virtualbox-iso:   5050K .......... .......... .......... .......... .......... 55% 1.69M 1s
-    virtualbox-iso:   5100K .......... .......... .......... .......... .......... 55% 27.7M 0s
-    virtualbox-iso:   5150K .......... .......... .......... .......... .......... 56% 24.0M 0s
-    virtualbox-iso:   5200K .......... .......... .......... .......... .......... 56% 25.3M 0s
-    virtualbox-iso:   5250K .......... .......... .......... .......... .......... 57% 19.6M 0s
-    virtualbox-iso:   5300K .......... .......... .......... .......... .......... 57% 22.3M 0s
-    virtualbox-iso:   5350K .......... .......... .......... .......... .......... 58% 12.2M 0s
-    virtualbox-iso:   5400K .......... .......... .......... .......... .......... 58% 6.06M 0s
-    virtualbox-iso:   5450K .......... .......... .......... .......... .......... 59% 56.7M 0s
-    virtualbox-iso:   5500K .......... .......... .......... .......... .......... 60% 18.2M 0s
-    virtualbox-iso:   5550K .......... .......... .......... .......... .......... 60% 26.8M 0s
-    virtualbox-iso:   5600K .......... .......... .......... .......... .......... 61% 11.1M 0s
-    virtualbox-iso:   5650K .......... .......... .......... .......... .......... 61% 17.8M 0s
-    virtualbox-iso:   5700K .......... .......... .......... .......... .......... 62% 7.90M 0s
-    virtualbox-iso:   5750K .......... .......... .......... .......... .......... 62% 16.9M 0s
-    virtualbox-iso:   5800K .......... .......... .......... .......... .......... 63% 4.76M 0s
-    virtualbox-iso:   5850K .......... .......... .......... .......... .......... 63% 2.27M 0s
-    virtualbox-iso:   5900K .......... .......... .......... .......... .......... 64% 21.3M 0s
-    virtualbox-iso:   5950K .......... .......... .......... .......... .......... 64% 37.0M 0s
-    virtualbox-iso:   6000K .......... .......... .......... .......... .......... 65% 11.7M 0s
-    virtualbox-iso:   6050K .......... .......... .......... .......... .......... 65% 23.4M 0s
-    virtualbox-iso:   6100K .......... .......... .......... .......... .......... 66% 34.1M 0s
-    virtualbox-iso:   6150K .......... .......... .......... .......... .......... 67% 35.7M 0s
-    virtualbox-iso:   6200K .......... .......... .......... .......... .......... 67% 11.4M 0s
-    virtualbox-iso:   6250K .......... .......... .......... .......... .......... 68% 11.5M 0s
-    virtualbox-iso:   6300K .......... .......... .......... .......... .......... 68% 9.01M 0s
-    virtualbox-iso:   6350K .......... .......... .......... .......... .......... 69% 9.40M 0s
-    virtualbox-iso:   6400K .......... .......... .......... .......... .......... 69% 1.97M 0s
-    virtualbox-iso:   6450K .......... .......... .......... .......... .......... 70% 17.1M 0s
-    virtualbox-iso:   6500K .......... .......... .......... .......... .......... 70% 1.80M 0s
-    virtualbox-iso:   6550K .......... .......... .......... .......... .......... 71% 40.5M 0s
-    virtualbox-iso:   6600K .......... .......... .......... .......... .......... 71% 49.9M 0s
-    virtualbox-iso:   6650K .......... .......... .......... .......... .......... 72% 17.7M 0s
-    virtualbox-iso:   6700K .......... .......... .......... .......... .......... 73% 24.4M 0s
-    virtualbox-iso:   6750K .......... .......... .......... .......... .......... 73% 10.7M 0s
-    virtualbox-iso:   6800K .......... .......... .......... .......... .......... 74% 11.5M 0s
-    virtualbox-iso:   6850K .......... .......... .......... .......... .......... 74% 10.2M 0s
-    virtualbox-iso:   6900K .......... .......... .......... .......... .......... 75% 18.8M 0s
-    virtualbox-iso:   6950K .......... .......... .......... .......... .......... 75% 16.8M 0s
-    virtualbox-iso:   7000K .......... .......... .......... .......... .......... 76% 1.74M 0s
-    virtualbox-iso:   7050K .......... .......... .......... .......... .......... 76% 14.0M 0s
-    virtualbox-iso:   7100K .......... .......... .......... .......... .......... 77% 45.9M 0s
-    virtualbox-iso:   7150K .......... .......... .......... .......... .......... 77% 35.9M 0s
-    virtualbox-iso:   7200K .......... .......... .......... .......... .......... 78% 31.3M 0s
-    virtualbox-iso:   7250K .......... .......... .......... .......... .......... 78% 18.4M 0s
-    virtualbox-iso:   7300K .......... .......... .......... .......... .......... 79% 21.0M 0s
-    virtualbox-iso:   7350K .......... .......... .......... .......... .......... 80% 15.0M 0s
-    virtualbox-iso:   7400K .......... .......... .......... .......... .......... 80% 4.06M 0s
-    virtualbox-iso:   7450K .......... .......... .......... .......... .......... 81% 30.4M 0s
-    virtualbox-iso:   7500K .......... .......... .......... .......... .......... 81% 2.24M 0s
-    virtualbox-iso:   7550K .......... .......... .......... .......... .......... 82% 23.2M 0s
-    virtualbox-iso:   7600K .......... .......... .......... .......... .......... 82% 25.0M 0s
-    virtualbox-iso:   7650K .......... .......... .......... .......... .......... 83% 35.9M 0s
-    virtualbox-iso:   7700K .......... .......... .......... .......... .......... 83% 29.3M 0s
-    virtualbox-iso:   7750K .......... .......... .......... .......... .......... 84% 10.8M 0s
-    virtualbox-iso:   7800K .......... .......... .......... .......... .......... 84% 8.14M 0s
-    virtualbox-iso:   7850K .......... .......... .......... .......... .......... 85% 22.9M 0s
-    virtualbox-iso:   7900K .......... .......... .......... .......... .......... 86% 10.3M 0s
-    virtualbox-iso:   7950K .......... .......... .......... .......... .......... 86% 9.82M 0s
-    virtualbox-iso:   8000K .......... .......... .......... .......... .......... 87% 9.52M 0s
-    virtualbox-iso:   8050K .......... .......... .......... .......... .......... 87% 13.4M 0s
-    virtualbox-iso:   8100K .......... .......... .......... .......... .......... 88% 12.9M 0s
-    virtualbox-iso:   8150K .......... .......... .......... .......... .......... 88% 1.75M 0s
-    virtualbox-iso:   8200K .......... .......... .......... .......... .......... 89% 16.3M 0s
-    virtualbox-iso:   8250K .......... .......... .......... .......... .......... 89% 22.3M 0s
-    virtualbox-iso:   8300K .......... .......... .......... .......... .......... 90% 23.8M 0s
-    virtualbox-iso:   8350K .......... .......... .......... .......... .......... 90% 24.4M 0s
-    virtualbox-iso:   8400K .......... .......... .......... .......... .......... 91% 29.9M 0s
-    virtualbox-iso:   8450K .......... .......... .......... .......... .......... 91% 22.2M 0s
-    virtualbox-iso:   8500K .......... .......... .......... .......... .......... 92% 21.0M 0s
-    virtualbox-iso:   8550K .......... .......... .......... .......... .......... 93% 11.3M 0s
-    virtualbox-iso:   8600K .......... .......... .......... .......... .......... 93% 13.3M 0s
-    virtualbox-iso:   8650K .......... .......... .......... .......... .......... 94% 10.2M 0s
-    virtualbox-iso:   8700K .......... .......... .......... .......... .......... 94% 1.71M 0s
-    virtualbox-iso:   8750K .......... .......... .......... .......... .......... 95% 15.4M 0s
-    virtualbox-iso:   8800K .......... .......... .......... .......... .......... 95% 13.2M 0s
-    virtualbox-iso:   8850K .......... .......... .......... .......... .......... 96% 23.1M 0s
-    virtualbox-iso:   8900K .......... .......... .......... .......... .......... 96% 40.0M 0s
-    virtualbox-iso:   8950K .......... .......... .......... .......... .......... 97% 26.8M 0s
-    virtualbox-iso:   9000K .......... .......... .......... .......... .......... 97% 25.4M 0s
-    virtualbox-iso:   9050K .......... .......... .......... .......... .......... 98% 19.0M 0s
-    virtualbox-iso:   9100K .......... .......... .......... .......... .......... 98% 23.3M 0s
-    virtualbox-iso:   9150K .......... .......... .......... .......... .......... 99% 10.9M 0s
-    virtualbox-iso:   9200K .......... .......... .......... .......... ...       100% 14.5M=1.0s
+    virtualbox-iso:      0K .......... .......... .......... .......... ..........  0% 3.42M 3s
+    virtualbox-iso:     50K .......... .......... .......... .......... ..........  1% 3.38M 3s
+    virtualbox-iso:    100K .......... .......... .......... .......... ..........  1% 7.05M 2s
+    virtualbox-iso:    150K .......... .......... .......... .......... ..........  2% 8.22M 2s
+    virtualbox-iso:    200K .......... .......... .......... .......... ..........  2% 2.17M 2s
+    virtualbox-iso:    250K .......... .......... .......... .......... ..........  3% 10.9M 2s
+    virtualbox-iso:    300K .......... .......... .......... .......... ..........  3% 11.7M 2s
+    virtualbox-iso:    350K .......... .......... .......... .......... ..........  4% 9.87M 2s
+    virtualbox-iso:    400K .......... .......... .......... .......... ..........  4% 2.03M 2s
+    virtualbox-iso:    450K .......... .......... .......... .......... ..........  5% 1.55M 2s
+    virtualbox-iso:    500K .......... .......... .......... .......... ..........  5% 5.15M 2s
+    virtualbox-iso:    550K .......... .......... .......... .......... ..........  6% 1.76M 2s
+    virtualbox-iso:    600K .......... .......... .......... .......... ..........  7% 10.9M 2s
+    virtualbox-iso:    650K .......... .......... .......... .......... ..........  7% 1.63M 2s
+    virtualbox-iso:    700K .......... .......... .......... .......... ..........  8% 2.03M 3s
+    virtualbox-iso:    750K .......... .......... .......... .......... ..........  8% 14.3M 2s
+    virtualbox-iso:    800K .......... .......... .......... .......... ..........  9% 9.28M 2s
+    virtualbox-iso:    850K .......... .......... .......... .......... ..........  9% 8.45M 2s
+    virtualbox-iso:    900K .......... .......... .......... .......... .......... 10% 17.7M 2s
+    virtualbox-iso:    950K .......... .......... .......... .......... .......... 10% 9.21M 2s
+    virtualbox-iso:   1000K .......... .......... .......... .......... .......... 11% 17.8M 2s
+    virtualbox-iso:   1050K .......... .......... .......... .......... .......... 11% 8.52M 2s
+    virtualbox-iso:   1100K .......... .......... .......... .......... .......... 12% 12.9M 2s
+    virtualbox-iso:   1150K .......... .......... .......... .......... .......... 12% 8.44M 2s
+    virtualbox-iso:   1200K .......... .......... .......... .......... .......... 13% 12.8M 2s
+    virtualbox-iso:   1250K .......... .......... .......... .......... .......... 14% 11.5M 2s
+    virtualbox-iso:   1300K .......... .......... .......... .......... .......... 14% 8.74M 2s
+    virtualbox-iso:   1350K .......... .......... .......... .......... .......... 15% 1.88M 2s
+    virtualbox-iso:   1400K .......... .......... .......... .......... .......... 15% 2.58M 2s
+    virtualbox-iso:   1450K .......... .......... .......... .......... .......... 16% 30.5M 2s
+    virtualbox-iso:   1500K .......... .......... .......... .......... .......... 16% 10.5M 2s
+    virtualbox-iso:   1550K .......... .......... .......... .......... .......... 17% 31.0M 2s
+    virtualbox-iso:   1600K .......... .......... .......... .......... .......... 17% 26.1M 2s
+    virtualbox-iso:   1650K .......... .......... .......... .......... .......... 18% 24.9M 2s
+    virtualbox-iso:   1700K .......... .......... .......... .......... .......... 18% 20.8M 1s
+    virtualbox-iso:   1750K .......... .......... .......... .......... .......... 19% 12.9M 1s
+    virtualbox-iso:   1800K .......... .......... .......... .......... .......... 20% 18.5M 1s
+    virtualbox-iso:   1850K .......... .......... .......... .......... .......... 20% 13.8M 1s
+    virtualbox-iso:   1900K .......... .......... .......... .......... .......... 21% 14.9M 1s
+    virtualbox-iso:   1950K .......... .......... .......... .......... .......... 21% 18.1M 1s
+    virtualbox-iso:   2000K .......... .......... .......... .......... .......... 22% 2.94M 1s
+    virtualbox-iso:   2050K .......... .......... .......... .......... .......... 22% 16.5M 1s
+    virtualbox-iso:   2100K .......... .......... .......... .......... .......... 23% 4.13M 1s
+    virtualbox-iso:   2150K .......... .......... .......... .......... .......... 23% 28.5M 1s
+    virtualbox-iso:   2200K .......... .......... .......... .......... .......... 24% 30.6M 1s
+    virtualbox-iso:   2250K .......... .......... .......... .......... .......... 24% 26.1M 1s
+    virtualbox-iso:   2300K .......... .......... .......... .......... .......... 25% 2.56M 1s
+    virtualbox-iso:   2350K .......... .......... .......... .......... .......... 25% 5.41M 1s
+    virtualbox-iso:   2400K .......... .......... .......... .......... .......... 26% 10.7M 1s
+    virtualbox-iso:   2450K .......... .......... .......... .......... .......... 27% 14.0M 1s
+    virtualbox-iso:   2500K .......... .......... .......... .......... .......... 27% 10.1M 1s
+    virtualbox-iso:   2550K .......... .......... .......... .......... .......... 28% 8.28M 1s
+    virtualbox-iso:   2600K .......... .......... .......... .......... .......... 28% 17.5M 1s
+    virtualbox-iso:   2650K .......... .......... .......... .......... .......... 29% 1.67M 1s
+    virtualbox-iso:   2700K .......... .......... .......... .......... .......... 29% 1.74M 1s
+    virtualbox-iso:   2750K .......... .......... .......... .......... .......... 30% 20.0M 1s
+    virtualbox-iso:   2800K .......... .......... .......... .......... .......... 30% 61.0M 1s
+    virtualbox-iso:   2850K .......... .......... .......... .......... .......... 31% 22.8M 1s
+    virtualbox-iso:   2900K .......... .......... .......... .......... .......... 31% 21.3M 1s
+    virtualbox-iso:   2950K .......... .......... .......... .......... .......... 32% 29.8M 1s
+    virtualbox-iso:   3000K .......... .......... .......... .......... .......... 32% 12.4M 1s
+    virtualbox-iso:   3050K .......... .......... .......... .......... .......... 33% 20.1M 1s
+    virtualbox-iso:   3100K .......... .......... .......... .......... .......... 34% 8.87M 1s
+    virtualbox-iso:   3150K .......... .......... .......... .......... .......... 34% 17.5M 1s
+    virtualbox-iso:   3200K .......... .......... .......... .......... .......... 35% 10.4M 1s
+    virtualbox-iso:   3250K .......... .......... .......... .......... .......... 35% 11.6M 1s
+    virtualbox-iso:   3300K .......... .......... .......... .......... .......... 36% 2.35M 1s
+    virtualbox-iso:   3350K .......... .......... .......... .......... .......... 36% 11.6M 1s
+    virtualbox-iso:   3400K .......... .......... .......... .......... .......... 37% 29.1M 1s
+    virtualbox-iso:   3450K .......... .......... .......... .......... .......... 37% 17.2M 1s
+    virtualbox-iso:   3500K .......... .......... .......... .......... .......... 38% 12.6M 1s
+    virtualbox-iso:   3550K .......... .......... .......... .......... .......... 38% 16.3M 1s
+    virtualbox-iso:   3600K .......... .......... .......... .......... .......... 39% 15.7M 1s
+    virtualbox-iso:   3650K .......... .......... .......... .......... .......... 40% 11.3M 1s
+    virtualbox-iso:   3700K .......... .......... .......... .......... .......... 40% 26.7M 1s
+    virtualbox-iso:   3750K .......... .......... .......... .......... .......... 41% 11.1M 1s
+    virtualbox-iso:   3800K .......... .......... .......... .......... .......... 41% 14.8M 1s
+    virtualbox-iso:   3850K .......... .......... .......... .......... .......... 42% 24.8M 1s
+    virtualbox-iso:   3900K .......... .......... .......... .......... .......... 42% 10.7M 1s
+    virtualbox-iso:   3950K .......... .......... .......... .......... .......... 43% 20.1M 1s
+    virtualbox-iso:   4000K .......... .......... .......... .......... .......... 43% 15.3M 1s
+    virtualbox-iso:   4050K .......... .......... .......... .......... .......... 44% 12.1M 1s
+    virtualbox-iso:   4100K .......... .......... .......... .......... .......... 44% 14.5M 1s
+    virtualbox-iso:   4150K .......... .......... .......... .......... .......... 45% 12.3M 1s
+    virtualbox-iso:   4200K .......... .......... .......... .......... .......... 45% 9.67M 1s
+    virtualbox-iso:   4250K .......... .......... .......... .......... .......... 46% 12.6M 1s
+    virtualbox-iso:   4300K .......... .......... .......... .......... .......... 47% 11.0M 1s
+    virtualbox-iso:   4350K .......... .......... .......... .......... .......... 47% 13.0M 1s
+    virtualbox-iso:   4400K .......... .......... .......... .......... .......... 48% 11.5M 1s
+    virtualbox-iso:   4450K .......... .......... .......... .......... .......... 48% 12.0M 1s
+    virtualbox-iso:   4500K .......... .......... .......... .......... .......... 49% 11.3M 1s
+    virtualbox-iso:   4550K .......... .......... .......... .......... .......... 49% 7.41M 1s
+    virtualbox-iso:   4600K .......... .......... .......... .......... .......... 50% 19.7M 1s
+    virtualbox-iso:   4650K .......... .......... .......... .......... .......... 50% 8.99M 1s
+    virtualbox-iso:   4700K .......... .......... .......... .......... .......... 51% 16.3M 1s
+    virtualbox-iso:   4750K .......... .......... .......... .......... .......... 51% 8.61M 1s
+    virtualbox-iso:   4800K .......... .......... .......... .......... .......... 52% 14.4M 1s
+    virtualbox-iso:   4850K .......... .......... .......... .......... .......... 53% 8.95M 1s
+    virtualbox-iso:   4900K .......... .......... .......... .......... .......... 53% 19.2M 1s
+    virtualbox-iso:   4950K .......... .......... .......... .......... .......... 54% 10.8M 1s
+    virtualbox-iso:   5000K .......... .......... .......... .......... .......... 54% 12.0M 1s
+    virtualbox-iso:   5050K .......... .......... .......... .......... .......... 55% 8.90M 1s
+    virtualbox-iso:   5100K .......... .......... .......... .......... .......... 55% 8.77M 1s
+    virtualbox-iso:   5150K .......... .......... .......... .......... .......... 56% 21.8M 1s
+    virtualbox-iso:   5200K .......... .......... .......... .......... .......... 56% 9.34M 1s
+    virtualbox-iso:   5250K .......... .......... .......... .......... .......... 57% 12.6M 1s
+    virtualbox-iso:   5300K .......... .......... .......... .......... .......... 57% 9.04M 1s
+    virtualbox-iso:   5350K .......... .......... .......... .......... .......... 58% 13.6M 1s
+    virtualbox-iso:   5400K .......... .......... .......... .......... .......... 58% 12.0M 1s
+    virtualbox-iso:   5450K .......... .......... .......... .......... .......... 59% 8.80M 0s
+    virtualbox-iso:   5500K .......... .......... .......... .......... .......... 60% 16.9M 0s
+    virtualbox-iso:   5550K .......... .......... .......... .......... .......... 60% 9.03M 0s
+    virtualbox-iso:   5600K .......... .......... .......... .......... .......... 61% 12.2M 0s
+    virtualbox-iso:   5650K .......... .......... .......... .......... .......... 61% 13.5M 0s
+    virtualbox-iso:   5700K .......... .......... .......... .......... .......... 62% 10.4M 0s
+    virtualbox-iso:   5750K .......... .......... .......... .......... .......... 62% 10.0M 0s
+    virtualbox-iso:   5800K .......... .......... .......... .......... .......... 63% 13.0M 0s
+    virtualbox-iso:   5850K .......... .......... .......... .......... .......... 63% 10.1M 0s
+    virtualbox-iso:   5900K .......... .......... .......... .......... .......... 64% 13.7M 0s
+    virtualbox-iso:   5950K .......... .......... .......... .......... .......... 64% 10.4M 0s
+    virtualbox-iso:   6000K .......... .......... .......... .......... .......... 65% 10.5M 0s
+    virtualbox-iso:   6050K .......... .......... .......... .......... .......... 65% 12.0M 0s
+    virtualbox-iso:   6100K .......... .......... .......... .......... .......... 66% 9.06M 0s
+    virtualbox-iso:   6150K .......... .......... .......... .......... .......... 67% 17.1M 0s
+    virtualbox-iso:   6200K .......... .......... .......... .......... .......... 67% 7.38M 0s
+    virtualbox-iso:   6250K .......... .......... .......... .......... .......... 68% 21.6M 0s
+    virtualbox-iso:   6300K .......... .......... .......... .......... .......... 68% 8.66M 0s
+    virtualbox-iso:   6350K .......... .......... .......... .......... .......... 69% 12.5M 0s
+    virtualbox-iso:   6400K .......... .......... .......... .......... .......... 69% 11.2M 0s
+    virtualbox-iso:   6450K .......... .......... .......... .......... .......... 70% 12.3M 0s
+    virtualbox-iso:   6500K .......... .......... .......... .......... .......... 70% 9.96M 0s
+    virtualbox-iso:   6550K .......... .......... .......... .......... .......... 71% 8.83M 0s
+    virtualbox-iso:   6600K .......... .......... .......... .......... .......... 71% 25.1M 0s
+    virtualbox-iso:   6650K .......... .......... .......... .......... .......... 72% 7.93M 0s
+    virtualbox-iso:   6700K .......... .......... .......... .......... .......... 73% 14.1M 0s
+    virtualbox-iso:   6750K .......... .......... .......... .......... .......... 73% 8.33M 0s
+    virtualbox-iso:   6800K .......... .......... .......... .......... .......... 74% 12.3M 0s
+    virtualbox-iso:   6850K .......... .......... .......... .......... .......... 74% 11.8M 0s
+    virtualbox-iso:   6900K .......... .......... .......... .......... .......... 75% 18.1M 0s
+    virtualbox-iso:   6950K .......... .......... .......... .......... .......... 75% 10.9M 0s
+    virtualbox-iso:   7000K .......... .......... .......... .......... .......... 76% 11.4M 0s
+    virtualbox-iso:   7050K .......... .......... .......... .......... .......... 76% 8.71M 0s
+    virtualbox-iso:   7100K .......... .......... .......... .......... .......... 77% 15.2M 0s
+    virtualbox-iso:   7150K .......... .......... .......... .......... .......... 77% 9.26M 0s
+    virtualbox-iso:   7200K .......... .......... .......... .......... .......... 78% 14.5M 0s
+    virtualbox-iso:   7250K .......... .......... .......... .......... .......... 78% 9.17M 0s
+    virtualbox-iso:   7300K .......... .......... .......... .......... .......... 79% 12.7M 0s
+    virtualbox-iso:   7350K .......... .......... .......... .......... .......... 80% 9.31M 0s
+    virtualbox-iso:   7400K .......... .......... .......... .......... .......... 80% 15.7M 0s
+    virtualbox-iso:   7450K .......... .......... .......... .......... .......... 81% 10.1M 0s
+    virtualbox-iso:   7500K .......... .......... .......... .......... .......... 81% 11.5M 0s
+    virtualbox-iso:   7550K .......... .......... .......... .......... .......... 82% 10.9M 0s
+    virtualbox-iso:   7600K .......... .......... .......... .......... .......... 82% 8.05M 0s
+    virtualbox-iso:   7650K .......... .......... .......... .......... .......... 83% 14.5M 0s
+    virtualbox-iso:   7700K .......... .......... .......... .......... .......... 83% 11.6M 0s
+    virtualbox-iso:   7750K .......... .......... .......... .......... .......... 84% 13.2M 0s
+    virtualbox-iso:   7800K .......... .......... .......... .......... .......... 84% 8.64M 0s
+    virtualbox-iso:   7850K .......... .......... .......... .......... .......... 85% 14.6M 0s
+    virtualbox-iso:   7900K .......... .......... .......... .......... .......... 86% 10.9M 0s
+    virtualbox-iso:   7950K .......... .......... .......... .......... .......... 86% 14.5M 0s
+    virtualbox-iso:   8000K .......... .......... .......... .......... .......... 87% 10.3M 0s
+    virtualbox-iso:   8050K .......... .......... .......... .......... .......... 87% 10.5M 0s
+    virtualbox-iso:   8100K .......... .......... .......... .......... .......... 88% 12.3M 0s
+    virtualbox-iso:   8150K .......... .......... .......... .......... .......... 88% 11.1M 0s
+    virtualbox-iso:   8200K .......... .......... .......... .......... .......... 89% 9.28M 0s
+    virtualbox-iso:   8250K .......... .......... .......... .......... .......... 89% 14.4M 0s
+    virtualbox-iso:   8300K .......... .......... .......... .......... .......... 90% 10.4M 0s
+    virtualbox-iso:   8350K .......... .......... .......... .......... .......... 90% 12.5M 0s
+    virtualbox-iso:   8400K .......... .......... .......... .......... .......... 91% 10.7M 0s
+    virtualbox-iso:   8450K .......... .......... .......... .......... .......... 91% 12.5M 0s
+    virtualbox-iso:   8500K .......... .......... .......... .......... .......... 92% 9.82M 0s
+    virtualbox-iso:   8550K .......... .......... .......... .......... .......... 93% 8.27M 0s
+    virtualbox-iso:   8600K .......... .......... .......... .......... .......... 93% 16.3M 0s
+    virtualbox-iso:   8650K .......... .......... .......... .......... .......... 94% 9.62M 0s
+    virtualbox-iso:   8700K .......... .......... .......... .......... .......... 94% 16.4M 0s
+    virtualbox-iso:   8750K .......... .......... .......... .......... .......... 95% 8.97M 0s
+    virtualbox-iso:   8800K .......... .......... .......... .......... .......... 95% 12.3M 0s
+    virtualbox-iso:   8850K .......... .......... .......... .......... .......... 96% 9.61M 0s
+    virtualbox-iso:   8900K .......... .......... .......... .......... .......... 96% 12.8M 0s
+    virtualbox-iso:   8950K .......... .......... .......... .......... .......... 97% 10.9M 0s
+    virtualbox-iso:   9000K .......... .......... .......... .......... .......... 97% 13.9M 0s
+    virtualbox-iso:   9050K .......... .......... .......... .......... .......... 98% 8.88M 0s
+    virtualbox-iso:   9100K .......... .......... .......... .......... .......... 98% 17.3M 0s
+    virtualbox-iso:   9150K .......... .......... .......... .......... .......... 99% 8.09M 0s
+    virtualbox-iso:   9200K .......... .......... .......... .......... ...       100% 22.3M=1.0s
     virtualbox-iso:
-    virtualbox-iso: 2018-03-27 20:26:47 (8.70 MB/s) - written to stdout [9464970/9464970]
+    virtualbox-iso: 2018-03-28 16:38:31 (8.60 MB/s) - written to stdout [9464970/9464970]
     virtualbox-iso:
     virtualbox-iso: /tmp /opt/scripts/packer_build/scripts/dev_env
     virtualbox-iso: Selecting previously unselected package vivaldi-stable.
@@ -10202,19 +10206,19 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: Hit:3 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-backports InRelease
     virtualbox-iso: Hit:4 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-security InRelease
     virtualbox-iso: Ign:5 http://dl.google.com/linux/chrome/deb stable InRelease
-    virtualbox-iso: Hit:6 http://archive.ubuntu.com/ubuntu xenial InRelease
-    virtualbox-iso: Hit:7 http://security.ubuntu.com/ubuntu xenial-security InRelease
+    virtualbox-iso: Get:6 http://security.ubuntu.com/ubuntu xenial-security InRelease [102 kB]
+    virtualbox-iso: Hit:7 http://archive.ubuntu.com/ubuntu xenial InRelease
     virtualbox-iso: Ign:8 http://repo.vivaldi.com/stable/deb stable InRelease
     virtualbox-iso: Get:9 http://repo.vivaldi.com/stable/deb stable Release [3,829 B]
-    virtualbox-iso: Get:10 http://repo.vivaldi.com/stable/deb stable Release.gpg [819 B]
-    virtualbox-iso: Get:11 http://dl.google.com/linux/chrome/deb stable Release [1,189 B]
-    virtualbox-iso: Get:12 http://repo.vivaldi.com/stable/deb stable/main amd64 Packages [1,371 B]
-    virtualbox-iso: Get:13 http://dl.google.com/linux/chrome/deb stable Release.gpg [819 B]
+    virtualbox-iso: Get:10 http://dl.google.com/linux/chrome/deb stable Release [1,189 B]
+    virtualbox-iso: Get:11 http://repo.vivaldi.com/stable/deb stable Release.gpg [819 B]
+    virtualbox-iso: Get:12 http://repo.vivaldi.com/stable/deb stable/main amd64 Packages [1,373 B]
+    virtualbox-iso: Get:13 http://repo.vivaldi.com/stable/deb stable/main i386 Packages [1,368 B]
     virtualbox-iso: Hit:14 http://archive.ubuntu.com/ubuntu xenial-updates InRelease
-    virtualbox-iso: Hit:15 http://archive.ubuntu.com/ubuntu xenial-backports InRelease
-    virtualbox-iso: Get:16 http://repo.vivaldi.com/stable/deb stable/main i386 Packages [1,368 B]
-    virtualbox-iso: Get:17 http://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,346 B]
-    virtualbox-iso: Fetched 10.7 kB in 1s (5,891 B/s)
+    virtualbox-iso: Get:15 http://dl.google.com/linux/chrome/deb stable Release.gpg [819 B]
+    virtualbox-iso: Get:16 http://archive.ubuntu.com/ubuntu xenial-backports InRelease [102 kB]
+    virtualbox-iso: Get:17 http://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,359 B]
+    virtualbox-iso: Fetched 215 kB in 1s (120 kB/s)
     virtualbox-iso: Reading package lists...
     virtualbox-iso: Building dependency tree...
     virtualbox-iso: Reading state information...
@@ -10238,7 +10242,7 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: debconf: (This frontend requires a controlling tty.)
     virtualbox-iso: debconf: falling back to frontend: Teletype
     virtualbox-iso: dpkg-preconfigure: unable to re-open stdin:
-    virtualbox-iso: Fetched 52.1 MB in 5s (8,990 kB/s)
+    virtualbox-iso: Fetched 52.1 MB in 5s (9,090 kB/s)
     virtualbox-iso: Selecting previously unselected package google-chrome-stable.
     virtualbox-iso: (Reading database ... 189730 files and directories currently installed.)
     virtualbox-iso: Preparing to unpack .../google-chrome-stable_65.0.3325.181-1_amd64.deb ...
@@ -10286,7 +10290,7 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: debconf: (This frontend requires a controlling tty.)
     virtualbox-iso: debconf: falling back to frontend: Teletype
     virtualbox-iso: dpkg-preconfigure: unable to re-open stdin:
-    virtualbox-iso: Fetched 1,540 kB in 0s (1,644 kB/s)
+    virtualbox-iso: Fetched 1,540 kB in 0s (4,936 kB/s)
     virtualbox-iso: Selecting previously unselected package libapr1:amd64.
     virtualbox-iso: (Reading database ... 189837 files and directories currently installed.)
     virtualbox-iso: Preparing to unpack .../libapr1_1.5.2-3_amd64.deb ...
@@ -10386,17 +10390,17 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: Hit:2 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-updates InRelease
     virtualbox-iso: Hit:3 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-backports InRelease
     virtualbox-iso: Hit:4 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial-security InRelease
-    virtualbox-iso: Ign:5 http://dl.google.com/linux/chrome/deb stable InRelease
-    virtualbox-iso: Get:6 https://download.docker.com/linux/ubuntu xenial InRelease [65.8 kB]
-    virtualbox-iso: Get:7 https://download.docker.com/linux/ubuntu xenial/stable amd64 Packages [3,542 B]
-    virtualbox-iso: Hit:8 http://security.ubuntu.com/ubuntu xenial-security InRelease
-    virtualbox-iso: Hit:9 http://archive.ubuntu.com/ubuntu xenial InRelease
+    virtualbox-iso: Get:5 https://download.docker.com/linux/ubuntu xenial InRelease [65.8 kB]
+    virtualbox-iso: Ign:6 http://dl.google.com/linux/chrome/deb stable InRelease
+    virtualbox-iso: Get:7 http://security.ubuntu.com/ubuntu xenial-security InRelease [102 kB]
+    virtualbox-iso: Get:8 https://download.docker.com/linux/ubuntu xenial/stable amd64 Packages [3,542 B]
+    virtualbox-iso: Hit:9 http://dl.google.com/linux/chrome/deb stable Release
     virtualbox-iso: Ign:10 http://repo.vivaldi.com/stable/deb stable InRelease
     virtualbox-iso: Hit:11 http://repo.vivaldi.com/stable/deb stable Release
-    virtualbox-iso: Hit:12 http://dl.google.com/linux/chrome/deb stable Release
+    virtualbox-iso: Hit:14 http://archive.ubuntu.com/ubuntu xenial InRelease
     virtualbox-iso: Hit:15 http://archive.ubuntu.com/ubuntu xenial-updates InRelease
-    virtualbox-iso: Hit:16 http://archive.ubuntu.com/ubuntu xenial-backports InRelease
-    virtualbox-iso: Fetched 69.3 kB in 1s (61.6 kB/s)
+    virtualbox-iso: Get:16 http://archive.ubuntu.com/ubuntu xenial-backports InRelease [102 kB]
+    virtualbox-iso: Fetched 274 kB in 5s (48.3 kB/s)
     virtualbox-iso: Reading package lists...
     virtualbox-iso: Building dependency tree...
     virtualbox-iso: Reading state information...
@@ -10423,9 +10427,9 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: Need to get 34.1 MB of archives.
     virtualbox-iso: After this operation, 182 MB of additional disk space will be used.
     virtualbox-iso: Get:1 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/universe amd64 pigz amd64 2.3.1-2 [61.1 kB]
-    virtualbox-iso: Get:2 https://download.docker.com/linux/ubuntu xenial/stable amd64 docker-ce amd64 18.03.0~ce-0~ubuntu [33.9 MB]
-    virtualbox-iso: Get:3 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/universe amd64 aufs-tools amd64 1:3.2+20130722-1.1ubuntu1 [92.9 kB]
-    virtualbox-iso: Get:4 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/universe amd64 cgroupfs-mount all 1.2 [4,970 B]
+    virtualbox-iso: Get:2 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/universe amd64 aufs-tools amd64 1:3.2+20130722-1.1ubuntu1 [92.9 kB]
+    virtualbox-iso: Get:3 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/universe amd64 cgroupfs-mount all 1.2 [4,970 B]
+    virtualbox-iso: Get:4 https://download.docker.com/linux/ubuntu xenial/stable amd64 docker-ce amd64 18.03.0~ce-0~ubuntu [33.9 MB]
     virtualbox-iso: debconf: unable to initialize frontend: Dialog
     virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
     virtualbox-iso: debconf: falling back to frontend: Readline
@@ -10433,7 +10437,7 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: debconf: (This frontend requires a controlling tty.)
     virtualbox-iso: debconf: falling back to frontend: Teletype
     virtualbox-iso: dpkg-preconfigure: unable to re-open stdin:
-    virtualbox-iso: Fetched 34.1 MB in 4s (7,720 kB/s)
+    virtualbox-iso: Fetched 34.1 MB in 3s (9,983 kB/s)
     virtualbox-iso: Selecting previously unselected package pigz.
     virtualbox-iso: (Reading database ... 190519 files and directories currently installed.)
     virtualbox-iso: Preparing to unpack .../pigz_2.3.1-2_amd64.deb ...
@@ -10463,9 +10467,9 @@ virtualbox-iso output will be in this color.
     virtualbox-iso:  Paused: 0
     virtualbox-iso:  Stopped: 0
     virtualbox-iso: Images: 0
-    virtualbox-iso: WARNING: No swap limit support
     virtualbox-iso: Server Version: 18.03.0-ce
     virtualbox-iso: Storage Driver: overlay2
+    virtualbox-iso: WARNING: No swap limit support
     virtualbox-iso:  Backing Filesystem: extfs
     virtualbox-iso:  Supports d_type: true
     virtualbox-iso:  Native Overlay Diff: true
@@ -10493,21 +10497,21 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: CPUs: 1
     virtualbox-iso: Total Memory: 992.3MiB
     virtualbox-iso: Name: vagrant
-    virtualbox-iso: ID: 2BTJ:LV6S:DCJF:5NEK:I5SZ:JH2B:H7QF:OC26:3X6G:VYV3:SN5Q:VOUC
+    virtualbox-iso: ID: LIYE:GGFN:QS4S:7H5P:N74H:QATV:KETF:X7J2:YELV:NICP:ZWMS:VW2J
     virtualbox-iso: Docker Root Dir: /var/lib/docker
     virtualbox-iso: Debug Mode (client): false
+    virtualbox-iso:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+    virtualbox-iso:                                  Dload  Upload   Total   Spent    Left  Speed
     virtualbox-iso: Debug Mode (server): false
     virtualbox-iso: Registry: https://index.docker.io/v1/
     virtualbox-iso: Labels:
     virtualbox-iso: Experimental: false
     virtualbox-iso: Insecure Registries:
-    virtualbox-iso:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
     virtualbox-iso:  127.0.0.0/8
     virtualbox-iso: Live Restore Enabled: false
-    virtualbox-iso:                                  Dload  Upload   Total   Spent    Left  Speed
     virtualbox-iso:
-    virtualbox-iso: 100   617    0   617    0     0    596      0 --:--:--  0:00:01 --:--:--   596
-    virtualbox-iso: 100 10.3M  100 10.3M    0     0  1354k      0  0:00:07  0:00:07 --:--:-- 2267k
+    virtualbox-iso: 100   617    0   617    0     0    677      0 --:--:-- --:--:-- --:--:--   677
+    virtualbox-iso: 100 10.3M  100 10.3M    0     0  1532k      0  0:00:06  0:00:06 --:--:-- 2267k
     virtualbox-iso: docker-compose version 1.20.0, build ca8d3c6
     virtualbox-iso: Install JDK 6,7,8
     virtualbox-iso: /opt/scripts/packer_build/scripts/dev_env/java /opt/scripts/packer_build/scripts/dev_env
@@ -13857,7 +13861,7 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: debconf: (This frontend requires a controlling tty.)
     virtualbox-iso: debconf: falling back to frontend: Teletype
     virtualbox-iso: dpkg-preconfigure: unable to re-open stdin:
-    virtualbox-iso: Fetched 27.8 MB in 9s (2,936 kB/s)
+    virtualbox-iso: Fetched 27.8 MB in 4s (5,874 kB/s)
     virtualbox-iso: Selecting previously unselected package ant.
     virtualbox-iso: (Reading database ... 190807 files and directories currently installed.)
     virtualbox-iso: Preparing to unpack .../ant_1.9.6-1ubuntu1_all.deb ...
@@ -14320,7 +14324,7 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: debconf: (This frontend requires a controlling tty.)
     virtualbox-iso: debconf: falling back to frontend: Teletype
     virtualbox-iso: dpkg-preconfigure: unable to re-open stdin:
-    virtualbox-iso: Fetched 68.0 MB in 13s (4,943 kB/s)
+    virtualbox-iso: Fetched 68.0 MB in 15s (4,259 kB/s)
     virtualbox-iso: Selecting previously unselected package libyaml-snake-java.
     virtualbox-iso: (Reading database ... 193366 files and directories currently installed.)
     virtualbox-iso: Preparing to unpack .../libyaml-snake-java_1.12-2_all.deb ...
@@ -14733,7 +14737,7 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: debconf: (This frontend requires a controlling tty.)
     virtualbox-iso: debconf: falling back to frontend: Teletype
     virtualbox-iso: dpkg-preconfigure: unable to re-open stdin:
-    virtualbox-iso: Fetched 5,808 kB in 2s (2,117 kB/s)
+    virtualbox-iso: Fetched 5,808 kB in 0s (6,410 kB/s)
     virtualbox-iso: Selecting previously unselected package gyp.
     virtualbox-iso: (Reading database ... 195897 files and directories currently installed.)
     virtualbox-iso: Preparing to unpack .../gyp_0.1+20150913git1f374df9-1ubuntu1_all.deb ...
@@ -14970,26 +14974,86 @@ virtualbox-iso output will be in this color.
     virtualbox-iso: ######################################################################## 100.0%
     virtualbox-iso:   [36m installed[0m : [2mv9.8.0[22m[0m
     virtualbox-iso:
+    virtualbox-iso: Cloning into 'my_dev_settings'...
+    virtualbox-iso: /opt/scripts/my_dev_settings /opt/scripts/packer_build/scripts/dev_env
+    virtualbox-iso: bash: cannot set terminal process group (17487): Inappropriate ioctl for device
+    virtualbox-iso: bash: no job control in this shell
+    virtualbox-iso: /opt/scripts/my_dev_settings ~
+    virtualbox-iso:
+    virtualbox-iso: WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+    virtualbox-iso:
+    virtualbox-iso: Reading package lists...
+    virtualbox-iso: Building dependency tree...
+    virtualbox-iso: Reading state information...
+    virtualbox-iso: libreadline6 is already the newest version (6.3-8ubuntu2).
+    virtualbox-iso: libreadline6-dev is already the newest version (6.3-8ubuntu2).
+    virtualbox-iso: libreadline6-dev set to manually installed.
+    virtualbox-iso: libssl-dev is already the newest version (1.0.2g-1ubuntu4.10).
+    virtualbox-iso: zlib1g-dev is already the newest version (1:1.2.8.dfsg-2ubuntu4.1).
+    virtualbox-iso: The following additional packages will be installed:
+    virtualbox-iso:   bzip2-doc
+    virtualbox-iso: Suggested packages:
+    virtualbox-iso:   sqlite3-doc
+    virtualbox-iso: The following NEW packages will be installed:
+    virtualbox-iso:   bzip2-doc libbz2-dev libsqlite3-dev
+    virtualbox-iso: 0 upgraded, 3 newly installed, 0 to remove and 1 not upgraded.
+    virtualbox-iso: Need to get 832 kB of archives.
+    virtualbox-iso: After this operation, 2,255 kB of additional disk space will be used.
+    virtualbox-iso: Get:1 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/main amd64 bzip2-doc all 1.0.6-8 [295 kB]
+    virtualbox-iso: Get:2 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/main amd64 libbz2-dev amd64 1.0.6-8 [29.1 kB]
+    virtualbox-iso: Get:3 http://ftp.jaist.ac.jp/pub/Linux/ubuntu xenial/main amd64 libsqlite3-dev amd64 3.11.0-1ubuntu1 [508 kB]
+    virtualbox-iso: debconf: unable to initialize frontend: Dialog
+    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+    virtualbox-iso: debconf: falling back to frontend: Readline
+    virtualbox-iso: debconf: unable to initialize frontend: Readline
+    virtualbox-iso: debconf: (This frontend requires a controlling tty.)
+    virtualbox-iso: debconf: falling back to frontend: Teletype
+    virtualbox-iso: dpkg-preconfigure: unable to re-open stdin:
+    virtualbox-iso: Fetched 832 kB in 0s (2,348 kB/s)
+    virtualbox-iso: Selecting previously unselected package bzip2-doc.
+    virtualbox-iso: (Reading database ... 199511 files and directories currently installed.)
+    virtualbox-iso: Preparing to unpack .../bzip2-doc_1.0.6-8_all.deb ...
+    virtualbox-iso: Unpacking bzip2-doc (1.0.6-8) ...
+    virtualbox-iso: Selecting previously unselected package libbz2-dev:amd64.
+    virtualbox-iso: Preparing to unpack .../libbz2-dev_1.0.6-8_amd64.deb ...
+    virtualbox-iso: Unpacking libbz2-dev:amd64 (1.0.6-8) ...
+    virtualbox-iso: Selecting previously unselected package libsqlite3-dev:amd64.
+    virtualbox-iso: Preparing to unpack .../libsqlite3-dev_3.11.0-1ubuntu1_amd64.deb ...
+    virtualbox-iso: Unpacking libsqlite3-dev:amd64 (3.11.0-1ubuntu1) ...
+    virtualbox-iso: Processing triggers for install-info (6.1.0.dfsg.1-5) ...
+    virtualbox-iso: Setting up bzip2-doc (1.0.6-8) ...
+    virtualbox-iso: Setting up libbz2-dev:amd64 (1.0.6-8) ...
+    virtualbox-iso: Setting up libsqlite3-dev:amd64 (3.11.0-1ubuntu1) ...
+    virtualbox-iso: Cloning into '/home/tamutamu/.pyenv'...
+    virtualbox-iso: Cloning into '/home/tamutamu/.pyenv/plugins/pyenv-virtualenv'...
+    virtualbox-iso: Downloading Python-3.6.4.tar.xz...
+    virtualbox-iso: -> https://www.python.org/ftp/python/3.6.4/Python-3.6.4.tar.xz
+    virtualbox-iso: Installing Python-3.6.4...
+    virtualbox-iso: Installed Python-3.6.4 to /home/tamutamu/.pyenv/versions/3.6.4
+    virtualbox-iso:
+    virtualbox-iso: Requirement already satisfied: setuptools in /home/tamutamu/.pyenv/versions/3.6.4/envs/py364/lib/python3.6/site-packages
+    virtualbox-iso: Requirement already satisfied: pip in /home/tamutamu/.pyenv/versions/3.6.4/envs/py364/lib/python3.6/site-packages
+    virtualbox-iso: Python 3.6.4
     virtualbox-iso: /opt/scripts/packer_build/scripts/dev_env
-    virtualbox-iso: + popd
+    virtualbox-iso: /opt/scripts/packer_build/scripts/dev_env
     virtualbox-iso: ~
+    virtualbox-iso: + popd
 ==> virtualbox-iso: Gracefully halting virtual machine...
 ==> virtualbox-iso: Preparing to export machine...
-    virtualbox-iso: Deleting forwarded port mapping for the communicator (SSH, WinRM, etc) (host port 3962)
+    virtualbox-iso: Deleting forwarded port mapping for the communicator (SSH, WinRM, etc) (host port 3531)
 ==> virtualbox-iso: Exporting virtual machine...
     virtualbox-iso: Executing: export ubuntu-16.04-amd64 --output builds\packer-ubuntu-16.04-amd64-virtualbox\ubuntu-16.04-amd64.ovf
-==> virtualbox-iso: Deregistering and deleting VM...
-==> virtualbox-iso: Running post-processor: vagrant
-==> virtualbox-iso (vagrant): Creating Vagrant box for 'virtualbox' provider
-    virtualbox-iso (vagrant): Copying from artifact: builds\packer-ubuntu-16.04-amd64-virtualbox\ubuntu-16.04-amd64-disk001.vmdk
-    virtualbox-iso (vagrant): Copying from artifact: builds\packer-ubuntu-16.04-amd64-virtualbox\ubuntu-16.04-amd64.ovf
-    virtualbox-iso (vagrant): Renaming the OVF to box.ovf...
-    virtualbox-iso (vagrant): Using custom Vagrantfile: vagrantfile.template
-    virtualbox-iso (vagrant): Compressing: Vagrantfile
-    virtualbox-iso (vagrant): Compressing: box.ovf
-    virtualbox-iso (vagrant): Compressing: metadata.json
-    virtualbox-iso (vagrant): Compressing: ubuntu-16.04-amd64-disk001.vmdk
-Build 'virtualbox-iso' finished.
+==> virtualbox-iso: Error exporting virtual machine: VBoxManage error: 0%...10%...
+==> virtualbox-iso: Progress state: VBOX_E_FILE_ERROR
+==> virtualbox-iso: VBoxManage.exe: error: Appliance write failed
+==> virtualbox-iso: VBoxManage.exe: error: Could not create the exported medium 'ubuntu-16.04-amd64-disk001.vmdk'.
+==> virtualbox-iso: VBoxManage.exe: error: VMDK: cannot write compressed data block in '.\ubuntu-16.04-amd64-disk001.vmdk' (VERR_DISK_FULL)
+==> virtualbox-iso: VBoxManage.exe: error: Details: code VBOX_E_FILE_ERROR (0x80bb0004), component MediumWrap, interface IMedium
+==> virtualbox-iso: VBoxManage.exe: error: Context: "enum RTEXITCODE __cdecl handleExportAppliance(struct HandlerArg *)" at line 1263 of file VBoxManageAppliance.cpp
+==> virtualbox-iso: Step "StepExport" failed
+==> virtualbox-iso: [c] Clean up and exit, [a] abort without cleanup, or [r] retry step (build may fail even if retry succeeds)? Build 'virtualbox-iso' errored: unexpected EOF
 
-==> Builds finished. The artifacts of successful builds are:
---> virtualbox-iso: 'virtualbox' provider box: my_dev.box
+==> Some builds didn't complete successfully and had errors:
+--> virtualbox-iso: unexpected EOF
+
+==> Builds finished but no artifacts were created.

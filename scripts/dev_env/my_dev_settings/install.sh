@@ -12,5 +12,5 @@ chown root:dev /opt/scripts/my_dev_settings/ -R
 
 ### Execute
 pushd /opt/scripts/my_dev_settings/ 
-sudo -i -u ${DEV_USER} bash -l -i /opt/scripts/my_dev_settings/all_setup.sh
+sudo -i -u ${DEV_USER} bash -i /opt/scripts/my_dev_settings/all_setup.sh
 popd
