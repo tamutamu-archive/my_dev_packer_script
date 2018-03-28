@@ -29,8 +29,8 @@ update-locale LANG=ja_JP.UTF-8
 
 
 
-### Install build-essential.
-apt -y install build-essential
+### Install base develop tools.
+apt -y install build-essential automake
 
 
 

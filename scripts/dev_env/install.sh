@@ -19,6 +19,8 @@ pushd ${CURDIR}
 
 ./js/nodejs.sh
 
+./ruby/ruby.sh
+
 ./my_dev_settings/install.sh
 
 popd
