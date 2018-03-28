@@ -1,10 +1,13 @@
 #!/bin/bash
 
 
+### Add Developer group
+groupadd dev
+
+
+
 ### Git clone packer scripts
-pushd /opt/scripts/
-git clone https://github.com/tamutamu/my_dev_packer_script.git
-popd
+git -C /opt/scripts/ clone https://github.com/tamutamu/my_dev_packer_script.git
 
 
 

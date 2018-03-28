@@ -18,5 +18,6 @@ pushd ${CURDIR}
 
 ./js/nodejs.sh
 
+./my_dev_settings/install.sh
 
 popd

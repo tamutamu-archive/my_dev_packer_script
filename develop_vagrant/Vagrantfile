@@ -9,7 +9,21 @@ Vagrant.configure("2") do |config|
 
   config.vm.provider "virtualbox" do |vb|
     vb.gui = true
-    vb.memory = "1024"
+    
+    vb.customize [
+      "modifyvm", :id,
+      "--clipboard", "bidirectional",
+      "--memory", "1024",
+      "--vram", "64",
+      "--accelerate3d", "off",
+      "--accelerate2dvideo", "off",
+      "--hwvirtex", "on",
+      "--nestedpaging", "on",
+      "--largepages", "on",
+      "--ioapic", "on",
+      "--pae", "on",
+    ]
+    
   end
 
 end
