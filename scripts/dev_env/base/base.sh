@@ -3,9 +3,10 @@
 
 ### Add User and Group 
 ### User
-useradd ${DEV_USER}
+useradd -m ${DEV_USER}
 HOME_DIR=/home/${DEV_USER}
 echo "${DEV_USER} ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/${DEV_USER}
+
 
 ### Group 
 groupadd dev
