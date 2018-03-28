@@ -1,5 +1,6 @@
 #!/bin/bash -eu
 
+. settings.conf
 
 CURDIR=$(cd $(dirname $0); pwd)
 pushd ${CURDIR}
