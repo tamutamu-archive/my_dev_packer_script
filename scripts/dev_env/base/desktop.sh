@@ -6,6 +6,11 @@ apt -y install ubuntu-mate-desktop
 
 
 
+### fcitx mozk
+apt -y install fcitx-mozc
+
+
+
 ### Flash
 apt -y install pepperflashplugin-nonfree
 
