@@ -1,6 +1,22 @@
 #!/bin/bash
 
 
+### Configure proxy.
+set +eu
+if [ ! -z "${http_proxy}" ]; then
+
+  cat << EOT > /etc/profile.d/proxy.sh
+export http_proxy=${http_proxy}
+export HTTP_PROXY=${http_proxy}
+export https_proxy=${http_proxy}
+export HTTPS_PROXY=${http_proxy}
+EOT
+
+fi
+set -eu
+
+
+
 ### Add User and Group 
 ### User
 useradd -m ${DEV_USER} -s /bin/bash
