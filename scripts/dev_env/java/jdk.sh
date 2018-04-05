@@ -6,6 +6,10 @@ CURDIR=$(cd $(dirname $0); pwd)
 
 pushd ${CURDIR}
 
+
+mkdir -p /usr/java
+
+
 ## Oracle JDK6
 pushd ./install-file
 chmod +x jdk-6u45-linux-x64.bin
@@ -33,6 +37,7 @@ set +e
 update-alternatives --install /usr/java/latest java /usr/java/jdk1.6.0_45 6
 update-alternatives --install /usr/java/latest java /usr/java/jdk1.7.0_80 7
 update-alternatives --install /usr/java/latest java /usr/java/jdk1.8.0_144 8
+update-alternatives --set java /usr/java/jdk1.8.0_14
 set -e
 
 
