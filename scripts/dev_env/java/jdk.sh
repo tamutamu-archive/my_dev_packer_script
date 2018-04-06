@@ -14,7 +14,7 @@ mkdir -p /usr/java
 pushd ./install-file
 chmod +x jdk-6u45-linux-x64.bin
 ./jdk-6u45-linux-x64.bin
-mv jdk1.6.0_45 /usr/Java/
+mv jdk1.6.0_45 /usr/java/
 popd
 
 
@@ -37,7 +37,7 @@ set +e
 update-alternatives --install /usr/java/latest java /usr/java/jdk1.6.0_45 6
 update-alternatives --install /usr/java/latest java /usr/java/jdk1.7.0_80 7
 update-alternatives --install /usr/java/latest java /usr/java/jdk1.8.0_144 8
-update-alternatives --set java /usr/java/jdk1.8.0_14
+update-alternatives --set java /usr/java/jdk1.8.0_144
 set -e
 
 
